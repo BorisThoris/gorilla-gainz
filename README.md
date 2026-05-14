@@ -1,4 +1,4 @@
-# React Fitness E-commerce Demo
+# Gorilla Gainz
 
 Historical SoftUni React project originally built as **Gorilla Gainz**.
 
