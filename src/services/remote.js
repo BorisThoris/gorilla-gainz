@@ -4,13 +4,13 @@ import React from "react";
 let remote = (() => {
   const BASE_URL = "https://baas.kinvey.com/";
   const BASE_URL2 = "http://localhost/api/";
-  const APP_KEY = "kid_B114qRX7m"; // APP KEY HERE
-  const APP_SECRET = "27b0d97397e44aae9e1c7f7f9c510a46"; // APP SECRET HERE
+  const APP_KEY = "YOUR_KINVEY_APP_KEY";
+  const APP_SECRET = "YOUR_KINVEY_APP_SECRET";
 
   function makeAuth(type) {
     return type === "basic"
       ? "Basic " +
-          btoa("kid_B114qRX7m" + ":" + "27b0d97397e44aae9e1c7f7f9c510a46")
+          btoa(APP_KEY + ":" + APP_SECRET)
       : "Kinvey " + sessionStorage.getItem("authtoken");
   }
 
