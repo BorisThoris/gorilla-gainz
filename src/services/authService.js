@@ -14,15 +14,29 @@ let auth = (() => {
   }
 
   function register(username, password, isAdmin, profilePic) {
-    let obj = { username, password, isAdmin, profilePic };
+    let obj = {
+      _id: `demo-user-${Date.now()}`,
+      _kmd: { authtoken: "demo-token" },
+      username,
+      password,
+      isAdmin: isAdmin ? "true" : "false",
+      profilePic
+    };
 
-    return remote.post("user", "", "basic", obj);
+    return Promise.resolve(obj);
   }
 
   function login(username, password) {
-    let obj = { username, password };
+    let obj = {
+      _id: "demo-admin",
+      _kmd: { authtoken: "demo-token" },
+      username: username || "demo",
+      isAdmin: "true",
+      profilePic:
+        "https://cdn.playbuzz.com/cdn//5918be09-9cb6-4b9c-8aed-09a6c067c333/e2224e33-3938-4898-8087-47dc5b04cb0a.jpg"
+    };
 
-    return remote.post("user", "login", "basic", obj);
+    return Promise.resolve(obj);
   }
 
   function loginNew(username, password) {
@@ -33,7 +47,8 @@ let auth = (() => {
   }
 
   function logout() {
-    return remote.post("user", "_logout", "Kinvey");
+    sessionStorage.clear();
+    return Promise.resolve({ ok: true });
   }
 
   function registerNew(username, password, profilePic) {

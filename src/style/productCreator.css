@@ -1,20 +1,23 @@
 #productCreater2 {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.568);
-  border-radius: 2%;
-  margin: 13px 20px;
-  display: inline-block;
+  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.28);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 8px;
+  margin: 0;
+  display: block;
   text-align: center;
-  font-family: arial;
+  font-family: Arial, Helvetica, sans-serif;
   left: 0;
-  height: 24vh;
-  width: 20vw;
-  min-width: 50px;
-  min-height: 260px;
-  background: rgba(199, 221, 197, 0.267);
+  width: 100%;
+  min-height: 440px;
+  padding: 24px 18px;
+  background: rgba(248, 250, 252, 0.92);
 }
 
 #creatorTitle {
-  font-size: calc(0.2em + 0.7vw);
+  color: #111827;
+  font-size: 26px;
+  font-weight: 900;
+  margin-bottom: 28px;
 }
 
 #productCreater {
@@ -38,20 +41,24 @@
 }
 
 button2 {
-  height: 7vh;
-  max-height: 50px;
-  font-size: calc(0.2em + 0.7vw);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  font-size: 14px;
+  font-weight: 800;
   border: none;
-  padding: 10px;
+  padding: 0 18px;
   color: white;
-  background-color: #000;
+  background-color: #111827;
+  border-radius: 4px;
   text-align: center;
   cursor: pointer;
   width: 60%;
 }
 
 button2:hover {
-  transform: scale(1.2);
+  background-color: #2f6f4e;
 }
 
 #crtDescription2 {
@@ -66,10 +73,11 @@ button2:hover {
 
 #crtTitle2 {
   width: 95%;
-  font-size: calc(0.2em + 0.7vw);
-  height: 5vh;
-  background-color: rgba(221, 197, 197, 0.363);
-  max-height: 100px;
+  font-size: 16px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(17, 24, 39, 0.22);
+  border-radius: 4px;
   margin: 20px 0px;
   text-align: center;
 }
@@ -80,7 +88,8 @@ button2:hover {
 
 #crtPrice {
   font-weight: 900;
-  font-size: calc(0.2em + 0.7vw);
+  font-size: 16px;
+  color: #111827;
 }
 
 #crtPrice2::-webkit-inner-spin-button,
@@ -90,9 +99,11 @@ button2:hover {
 }
 
 #crtPrice2 {
-  width: 20%;
-
-  background-color: rgba(221, 197, 197, 0.363);
+  width: 72px;
+  height: 42px;
+  background-color: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(17, 24, 39, 0.22);
+  border-radius: 4px;
   resize: none;
   margin: 20px 0px;
   text-align: center;

@@ -1,29 +1,28 @@
 #menu {
-  font-size: calc(0.2em + 0.7vw);
-  background-color: rgba(199, 221, 197, 0.267);
-  margin-bottom: 10px;
-  margin: 20px;
-  height: 10vh;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.568);
-  border-radius: 2%;
+  align-items: center;
+  font-size: 15px;
+  background-color: rgba(248, 250, 252, 0.9);
+  margin: 20px auto 30px;
+  height: 86px;
+  max-width: 1360px;
+  width: 92vw;
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.28);
+  border-radius: 8px;
   display: flex;
-
-  margin-bottom: 30px;
+  padding: 0 24px;
 }
 
 #menu li {
 }
 
 #menu a {
-  margin: auto;
-  color: black;
+  margin: 0 auto;
+  color: #111827;
   font-weight: 900;
-  text-shadow: 4px 8px 0 rgba(0, 0, 0, 0.1);
   text-align: center;
-
   text-decoration: tomato;
   transition: 0.3s;
-  font-size: calc(0.2em + 0.7vw);
+  font-size: 15px;
 }
 
 #menu li2 {
@@ -38,7 +37,7 @@
 }
 
 #menu a:hover {
-  transform: scale(1.3);
+  color: #2f6f4e;
   transition: 0.3s;
 }
 
@@ -61,32 +60,35 @@
 }
 
 #profile {
-  margin: auto;
+  align-items: center;
+  gap: 10px;
+  margin-left: auto;
   font-weight: 900;
   text-align: center;
-  height: 6vh;
+  height: 58px;
   display: flex;
   justify-content: center;
   justify-items: center;
-  text-align: center;
 }
 
 #profilePicNav {
-  height: 6vh;
-  width: 3vw;
-  border-radius: 40%;
+  height: 52px;
+  width: 52px;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 #logoImg {
-  height: 10vh;
-  width: 6vw;
-  margin-left: 15px;
+  height: 64px;
+  width: 64px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 30px;
 }
 
 #a2 {
-  font-size: calc(0.2em + 0.7vw);
+  font-size: 15px;
   font-weight: 900;
-  text-shadow: 4px 8px 0 rgba(0, 0, 0, 0.1);
   transition: 0.3s;
-  height: 5vh;
+  height: auto;
 }

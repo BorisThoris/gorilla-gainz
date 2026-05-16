@@ -33,6 +33,7 @@ export default class Catalogue extends React.Component {
     console.log(this.test);
     let Products = this.state.products.map(p => (
       <ProductCard
+        key={p._id}
         price={p.price}
         productDesc={p.productDesc}
         productName={p.productName}

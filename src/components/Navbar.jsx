@@ -5,6 +5,7 @@ import notify from "../services/notify.js";
 import { Link } from "react-router-dom";
 import { withRouter } from "react-router-dom";
 import createHistory from "history/createBrowserHistory";
+import gorillaPic from "../gorillaPic.jpg";
 
 class Navbar2 extends React.Component {
   onSubmit() {
@@ -28,13 +29,12 @@ class Navbar2 extends React.Component {
 
       navProp = (
         <div id="menu">
-          <div class="logoLi">
-            <span class="logo">
+          <div className="logoLi">
+            <span className="logo">
               <img
-                src="https://s1.gifyu.com/images/kill_your_gorilla6.gif"
-                alt="kill_your_gorilla6"
+                src={gorillaPic}
                 id="logoImg"
-                alt="err"
+                alt="Gorilla Gainz"
                 width="90"
                 height="90"
               />
@@ -58,8 +58,7 @@ class Navbar2 extends React.Component {
             <img
               id="profilePicNav"
               src={sessionStorage.getItem("profilePic")}
-              alt="kill_your_gorilla6"
-              alt="err"
+              alt={username}
               width="50"
               height="50"
             />
@@ -74,9 +73,8 @@ class Navbar2 extends React.Component {
         <div id="menu">
           <img
             id="logoImg"
-            src="https://s1.gifyu.com/images/kill_your_gorilla6.gif"
-            alt="kill_your_gorilla6"
-            alt="err"
+            src={gorillaPic}
+            alt="Gorilla Gainz"
             width="90"
             height="90"
           />

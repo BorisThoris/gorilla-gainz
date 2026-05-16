@@ -112,7 +112,7 @@ export default class ProductView extends React.Component {
     }
   };
 
-  nder() {
+  render() {
     let imageUrl;
 
     let buttonsProp;

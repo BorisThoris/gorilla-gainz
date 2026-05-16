@@ -8,20 +8,23 @@ export default class ProductCard extends React.Component {
 
   render() {
     return (
-      <div class="card">
+      <div className="card">
         <h1 id="productCardTitle">{this.props.productName}</h1>
 
         <img
           src={this.props.imgUrl}
           id="productCardImage"
-          alt="kill_your_gorilla6"
-          alt="err"
+          alt={this.props.productName}
           width="300"
           height="350"
         />
-        <Link to={`/product-view/${this.props.id}`} activeClassName="active">
+        <p id="productCardDescription">{this.props.productDesc}</p>
+        <div id="productCardFooter">
+          <span id="productCardPrice">${this.props.price}</span>
+          <Link to={`/product-view/${this.props.id}`}>
           <button id="button3">More Information</button>
-        </Link>
+          </Link>
+        </div>
       </div>
     );
   }

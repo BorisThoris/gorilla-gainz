@@ -68,6 +68,14 @@ Then open:
 http://localhost:3000
 ```
 
+For demo review, products, login/register, and profile reads/updates use in-memory mock data. Login accepts any non-empty-looking credentials and returns an admin demo session so catalogue create/update/delete controls can be exercised locally. The npm scripts set the legacy Create React App environment flags needed for modern Node versions.
+
+## Verify
+
+```bash
+npm run build
+```
+
 ## Deployment
 
 The project includes a GitHub Pages deployment script:
@@ -84,7 +92,7 @@ https://BorisThoris.github.io/react-fitness-ecommerce-demo
 
 ## Security / Backend Note
 
-The original student project used a Kinvey backend. Historical app keys/secrets have been removed from the source and replaced with placeholders. To run the backend-backed flows, provide your own Kinvey-compatible app key and secret in `src/services/remote.js`.
+The original student project used a Kinvey backend. Historical app keys/secrets have been removed from the source and replaced with placeholders. The current demo path uses local mock data; to restore backend-backed flows, reconnect the service modules to `src/services/remote.js` and provide your own Kinvey-compatible app key and secret.
 
 Because this is an archived portfolio project, the original hosted backend may no longer exist.
 
@@ -98,3 +106,15 @@ Known limitations:
 - Backend configuration is intentionally removed.
 - Some code and naming reflect its 2019 student-project origin.
 - No modernization/refactor pass has been applied.
+
+## Cloudflare Pages
+
+- Pages project name: `gorilla-gainz`
+- GitHub repository: `BorisThoris/gorilla-gainz`
+- Production branch: `master`
+- Root directory: `.`
+- Build command: `SKIP_PREFLIGHT_CHECK=true NODE_OPTIONS=--openssl-legacy-provider npx react-scripts build`
+- Build output directory: `build`
+- Public URL target: `https://gorilla-gainz.pages.dev/`
+
+Do not enable Cloudflare Access for the demo deployment. Leave frame-blocking headers unset so the portfolio can iframe the public build.

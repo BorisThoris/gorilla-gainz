@@ -5,37 +5,61 @@ import remote from "../services/remote.js";
 import auth from "../services/authService.js";
 
 let products = (() => {
-    function getAllProducts() {
-        const endpoint = 'products?query={}&sort={"_kmd.ect": -1}';
+    let demoProducts = [
+        {
+            _id: "demo-barbell-kit",
+            price: 149,
+            imgUrl: "https://images.unsplash.com/photo-1534367507873-d2d7e24c797f?auto=format&fit=crop&w=900&q=80",
+            productDesc: "Starter barbell and plate bundle for the archived Gorilla Gainz store demo.",
+            productName: "Barbell Kit"
+        },
+        {
+            _id: "demo-training-gloves",
+            price: 29,
+            imgUrl: "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=900&q=80",
+            productDesc: "Grip gloves with wrist support, included as mock catalogue data for local demos.",
+            productName: "Training Gloves"
+        },
+        {
+            _id: "demo-shaker-pack",
+            price: 18,
+            imgUrl: "https://images.unsplash.com/photo-1593079831268-3381b0db4a77?auto=format&fit=crop&w=900&q=80",
+            productDesc: "Reusable shaker pack used to keep the product detail and catalogue flows runnable without Kinvey.",
+            productName: "Shaker Pack"
+        }
+    ];
 
-        return remote.get('appdata', "Products", 'kinvey');
+    function getAllProducts() {
+        return Promise.resolve(demoProducts);
     }
     
     function createProduct(price, imgUrl, productDesc, productName) {
-        let data = { price, imgUrl, productDesc, productName};
+        let data = { _id: `demo-product-${Date.now()}`, price, imgUrl, productDesc, productName};
 
-        return remote.post('appdata', 'Products', 'kinvey', data);
+        demoProducts = [data].concat(demoProducts);
+        return Promise.resolve(data);
     }
 
     function editProduct(price, imgUrl, productDesc, productName, productId) {
-        const endpoint = `Products/${productId}`;
-        let data = { price, imgUrl, productDesc, productName};
+        let data = { _id: productId, price, imgUrl, productDesc, productName};
 
-        return remote.update('appdata', endpoint, 'kinvey', data);
+        demoProducts = demoProducts.map(product =>
+            product._id === productId ? data : product
+        );
+        return Promise.resolve(data);
     }
     
     function deleteProduct(postId) {
-        const endpoint = `Products/${postId}`;
-
-        return remote.remove('appdata', endpoint, 'kinvey');
+        demoProducts = demoProducts.filter(product => product._id !== postId);
+        return Promise.resolve({ _id: postId });
     }
 
    
 
     function getProductById(postId) {
-        const endpoint = `Products/${postId}`;
-
-        return remote.get('appdata', endpoint, 'kinvey');
+        return Promise.resolve(
+            demoProducts.find(product => product._id === postId) || demoProducts[0]
+        );
     }
 
     return {

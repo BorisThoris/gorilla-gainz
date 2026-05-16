@@ -6,12 +6,12 @@ import auth from "../services/authService.js";
 
 let profileService = (() => {
     function getUser(id) {
-        
-        //GET /user/:appKey/:id HTTP/1.1
-        
-       
-         
-        return remote.get('user', id, 'kinvey');
+        return Promise.resolve({
+            _id: id || "demo-admin",
+            username: sessionStorage.getItem("username") || "demo",
+            profilePic: sessionStorage.getItem("profilePic"),
+            isAdmin: sessionStorage.getItem("isAdmin") || "true"
+        });
         
     }   
 
@@ -20,7 +20,10 @@ let profileService = (() => {
        // PUT / user /: appKey /: id HTTP / 1.1
         let data = object;
         
-        return remote.update('user', id, 'kinvey', data)
+        if (data.profilePic) {
+            sessionStorage.setItem("profilePic", data.profilePic);
+        }
+        return Promise.resolve(Object.assign({ _id: id }, data))
         
 
     }   
