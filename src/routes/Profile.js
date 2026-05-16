@@ -43,9 +43,6 @@ export default class Profile extends React.Component {
   };
 
   render() {
-    auth.registerNew("Boris", "lolSad", "lolPic").then(data => {
-      console.log(data);
-    });
     let username = sessionStorage.getItem("username");
     let isAdmin = sessionStorage.getItem("isAdmin");
     if (isAdmin === "false") {

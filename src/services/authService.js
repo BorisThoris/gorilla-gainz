@@ -1,5 +1,3 @@
-import remote from "../services/remote.js";
-
 let auth = (() => {
   function isAuth() {
     return sessionStorage.getItem("authtoken") !== null;
@@ -39,26 +37,9 @@ let auth = (() => {
     return Promise.resolve(obj);
   }
 
-  function loginNew(username, password) {
-    return remote.post2(
-      "user",
-      `login?username=${username}&password=${password}`
-    );
-  }
-
   function logout() {
     sessionStorage.clear();
     return Promise.resolve({ ok: true });
-  }
-
-  function registerNew(username, password, profilePic) {
-    // public string profilePic { get; set; }
-    // public string username { get; set; }
-
-    return remote.post2(
-      "user",
-      `register?username=${username}&password=${password}&profilepic=${profilePic}`
-    );
   }
 
   return {
@@ -66,8 +47,7 @@ let auth = (() => {
     login,
     logout,
     register,
-    saveSession,
-    registerNew
+    saveSession
   };
 })();
 export default auth;

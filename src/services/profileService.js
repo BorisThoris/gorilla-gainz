@@ -1,9 +1,3 @@
-import $ from "jquery";
-import React from 'react';
-import notify from "../services/notify.js";
-import remote from "../services/remote.js";
-import auth from "../services/authService.js";
-
 let profileService = (() => {
     function getUser(id) {
         return Promise.resolve({
