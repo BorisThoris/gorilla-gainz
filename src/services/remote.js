@@ -1,57 +1,27 @@
-import $ from "jquery";
-
-// Archived Kinvey adapter kept for historical reference. Demo routes should use
-// local mock services instead of importing or calling this module.
+// Archived backend adapter boundary. Demo routes use local mock services instead
+// of importing or calling this module, and this fallback deliberately avoids any
+// network request if a historical path is reached accidentally.
 let remote = (() => {
-  const BASE_URL = "https://baas.kinvey.com/";
-  const APP_KEY = "YOUR_KINVEY_APP_KEY";
-  const APP_SECRET = "YOUR_KINVEY_APP_SECRET";
-
-  function makeAuth(type) {
-    return type === "basic"
-      ? "Basic " +
-          btoa(APP_KEY + ":" + APP_SECRET)
-      : "Kinvey " + sessionStorage.getItem("authtoken");
+  function archivedRequest() {
+    return Promise.reject(
+      new Error("Archived backend calls are disabled for the portfolio demo.")
+    );
   }
 
-  // request method (GET, POST, PUT)
-  // kinvey module (user/appdata)
-  // url endpoint
-  // auth
-
-  function makeRequest(method, module, endpoint, auth) {
-    let sad = makeAuth(auth);
-
-    return {
-      url: BASE_URL + module + "/" + APP_KEY + "/" + endpoint,
-      method: method,
-
-      headers: {
-        Authorization: makeAuth(auth)
-      }
-    };
+  function get() {
+    return archivedRequest();
   }
 
-  function get(module, endpoint, auth) {
-    return $.ajax(makeRequest("GET", module, endpoint, auth));
+  function post() {
+    return archivedRequest();
   }
 
-  function post(module, endpoint, auth, data) {
-    let obj = makeRequest("POST", module, endpoint, auth);
-    if (data) {
-      obj.data = data;
-    }
-    return $.ajax(obj);
+  function update() {
+    return archivedRequest();
   }
 
-  function update(module, endpoint, auth, data) {
-    let obj = makeRequest("PUT", module, endpoint, auth);
-    obj.data = data;
-    return $.ajax(obj);
-  }
-
-  function remove(module, endpoint, auth) {
-    return $.ajax(makeRequest("DELETE", module, endpoint, auth));
+  function remove() {
+    return archivedRequest();
   }
 
   return {
