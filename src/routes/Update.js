@@ -1,16 +1,6 @@
 import React from 'react';
-import { Checkbox, Button } from 'antd';
-import ReactDOM from 'react-dom';
 import NavBar from '../components/Navbar.jsx';
 import Footer from '../components/footer.jsx';
-
-
-import notify from "../services/notify.js";
-import remote from "../services/remote.js";
-import auth from "../services/authService.js";
-
-
-
 
 
 export default class Update extends React.Component {

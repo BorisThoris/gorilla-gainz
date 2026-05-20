@@ -1,6 +1,7 @@
 import $ from "jquery";
-import React from "react";
 
+// Archived Kinvey adapter kept for historical reference. Demo routes should use
+// local mock services instead of importing or calling this module.
 let remote = (() => {
   const BASE_URL = "https://baas.kinvey.com/";
   const APP_KEY = "YOUR_KINVEY_APP_KEY";

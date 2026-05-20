@@ -1,11 +1,7 @@
 import React from "react";
-import { Checkbox, Button } from "antd";
-import NavBar from "../components/Navbar.jsx";
-import Footer from "../components/footer.jsx";
-import YouTube from "react-youtube";
+import { Button } from "antd";
 import profService from "../services/profileService";
 import notify from "../services/notify";
-import auth from "../services/authService";
 
 export default class Profile extends React.Component {
   state = {
@@ -27,16 +23,13 @@ export default class Profile extends React.Component {
   };
 
   onSubmit = () => {
-    let username = this.state.username;
-    let isAdmin = this.state.isAdmin;
     let profilePic = this.state.profilePic;
     let object = { profilePic };
     let id = this.state.userId;
     profService
       .updateUser(id, object)
-      .then(userData => {
+      .then(() => {
         notify.showInfo("Updated");
-        auth.saveSession(userData);
         window.location = "user-profile";
       })
       .catch(() => notify.handleError);

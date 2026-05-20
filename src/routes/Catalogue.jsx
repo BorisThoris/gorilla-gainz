@@ -1,14 +1,9 @@
 import React from "react";
 
-import NavBar from "../components/Navbar.jsx";
-import Footer from "../components/footer.jsx";
 import ProductCard from "../components/productCard";
-import YouTube from "react-youtube";
 import ProductCreator from "../components/productCreater";
 import product from "../services/productsService.js";
 import notify from "../services/notify.js";
-import remote from "../services/remote.js";
-import auth from "../services/authService.js";
 
 export default class Catalogue extends React.Component {
   constructor(props) {
