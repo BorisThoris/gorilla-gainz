@@ -54,6 +54,15 @@ export default {
   analysisNotes:
     "Archived ecommerce demo with product browsing; kept in the quieter section because it is older and less differentiated.",
 
+  // Where the link-preview card lives: the page head that carries the Open
+  // Graph tags, and the static directory the image is published from.
+  social: {
+    "htmlFile": "public/index.html",
+    "staticDir": "public",
+    "imageName": "og-image.jpg",
+    "imageUrlPath": "/og-image.jpg"
+  },
+
   media: {
     sourceDir: path.join(portfolioRoot, "public", "project-shots", "gorilla-gainz", "latest"),
     publicPathPrefix: "/project-shots/gorilla-gainz/latest",
