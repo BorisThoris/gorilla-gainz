@@ -1,0 +1,174 @@
+{
+  "$schema": "./scripts/project.meta.schema.json",
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-03T20:39:09.417Z",
+  "generatedBy": "scripts/generate-project-meta.mjs",
+  "identity": {
+    "slug": "gorilla-gainz",
+    "repoName": "react-fitness-ecommerce-demo",
+    "packageName": "gorilla-gainz",
+    "version": "0.1.0",
+    "title": "Gorilla Gainz",
+    "subtitle": "Fitness ecommerce archive",
+    "description": "An archived React ecommerce demo with product browsing and backend calls replaced by demo-safe placeholders.",
+    "tags": [
+      "React",
+      "Ecommerce",
+      "Archive"
+    ],
+    "accent": "#facc15",
+    "classification": "web-app",
+    "showcaseTier": "showcase",
+    "showcaseOrder": 9
+  },
+  "links": {
+    "deploymentUrl": "https://gorilla-gainz-git.pages.dev/",
+    "localUrl": "http://127.0.0.1:4113/",
+    "homepage": "https://BorisThoris.github.io/react-fitness-ecommerce-demo",
+    "repository": "https://github.com/BorisThoris/gorilla-gainz"
+  },
+  "runtime": {
+    "packageManager": "npm",
+    "buildCommand": "npm run build",
+    "buildOutput": "build",
+    "runCommand": "npm start",
+    "devPort": 4113,
+    "serveBasePath": "/react-fitness-ecommerce-demo",
+    "scripts": [
+      "start",
+      "build",
+      "predeploy",
+      "deploy",
+      "test",
+      "eject",
+      "meta",
+      "meta:check"
+    ]
+  },
+  "capture": {
+    "route": "/"
+  },
+  "media": {
+    "source": "portfolio-capture",
+    "directory": "C:/Users/Gaming PC/Desktop/Repos/portfolio/public/project-shots/gorilla-gainz/latest",
+    "primary": "/project-shots/gorilla-gainz/latest/card.jpg",
+    "images": [
+      {
+        "profile": "card",
+        "file": "card.jpg",
+        "path": "/project-shots/gorilla-gainz/latest/card.jpg",
+        "bytes": 134574,
+        "width": 1600,
+        "height": 900,
+        "capturedAt": "2026-08-27T12:17:43.801Z"
+      },
+      {
+        "profile": "desktop",
+        "file": "desktop.jpg",
+        "path": "/project-shots/gorilla-gainz/latest/desktop.jpg",
+        "bytes": 122605,
+        "width": 1440,
+        "height": 900,
+        "capturedAt": "2026-08-27T12:17:47.431Z"
+      },
+      {
+        "profile": "full",
+        "file": "full.jpg",
+        "path": "/project-shots/gorilla-gainz/latest/full.jpg",
+        "bytes": 102334,
+        "width": 1440,
+        "height": 900,
+        "capturedAt": "2026-08-27T12:17:54.863Z"
+      },
+      {
+        "profile": "main",
+        "file": "main.png",
+        "path": "/project-shots/gorilla-gainz/main.png",
+        "bytes": 911765,
+        "width": 1440,
+        "height": 1000,
+        "capturedAt": "2026-05-15T20:52:20.791Z"
+      },
+      {
+        "profile": "mobile",
+        "file": "mobile.jpg",
+        "path": "/project-shots/gorilla-gainz/latest/mobile.jpg",
+        "bytes": 28786,
+        "width": 430,
+        "height": 932,
+        "capturedAt": "2026-08-27T12:17:51.183Z"
+      }
+    ]
+  },
+  "stack": {
+    "framework": "React",
+    "language": "JavaScript",
+    "runtimeTargets": [
+      "web"
+    ],
+    "libraries": [
+      {
+        "name": "react",
+        "version": "^16.4.1"
+      },
+      {
+        "name": "react-dom",
+        "version": "^16.4.1"
+      },
+      {
+        "name": "react-router-dom",
+        "version": "^4.3.1"
+      },
+      {
+        "name": "bootstrap",
+        "version": "^4.1.1"
+      }
+    ],
+    "dependencyCount": 22,
+    "devDependencyCount": 1
+  },
+  "metrics": {
+    "sourceFiles": 42,
+    "testFiles": 0,
+    "sourceLines": 3053,
+    "largestDirectories": [
+      {
+        "directory": "src",
+        "files": 39
+      },
+      {
+        "directory": "scripts",
+        "files": 2
+      },
+      {
+        "directory": "public",
+        "files": 1
+      }
+    ],
+    "hasReadme": true,
+    "hasTests": false,
+    "hasCi": false,
+    "hasDocs": false
+  },
+  "scores": {
+    "priorityScore": 82,
+    "demoabilityScore": 66,
+    "depthScore": 58,
+    "polishScore": 58,
+    "uniquenessScore": 54,
+    "maintenanceScore": 52
+  },
+  "analysisNotes": "Archived ecommerce demo with product browsing; kept in the quieter section because it is older and less differentiated.",
+  "git": {
+    "branch": "ai/refine-gorilla-gainz-cycle-02",
+    "head": "e57cb32",
+    "lastCommitDate": "2026-05-21T00:01:05+03:00",
+    "lastCommitSubject": "Preserve verified work before AI refine gorilla-gainz",
+    "commitCount": 20,
+    "remote": "https://github.com/BorisThoris/gorilla-gainz.git"
+  },
+  "readme": {
+    "file": "README.md",
+    "heading": "Gorilla Gainz"
+  }
+}
