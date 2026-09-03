@@ -32,7 +32,9 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "meta": "node scripts/generate-project-meta.mjs",
+    "meta:check": "node scripts/generate-project-meta.mjs --check"
   },
   "devDependencies": {
     "file-loader": "^1.1.11"
