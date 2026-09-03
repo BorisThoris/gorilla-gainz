@@ -1,7 +1,7 @@
 {
   "$schema": "./scripts/project.meta.schema.json",
   "schemaVersion": 1,
-  "generatedAt": "2026-09-03T20:39:09.417Z",
+  "generatedAt": "2026-09-03T20:45:32.583Z",
   "generatedBy": "scripts/generate-project-meta.mjs",
   "identity": {
     "slug": "gorilla-gainz",
@@ -130,7 +130,7 @@
   "metrics": {
     "sourceFiles": 42,
     "testFiles": 0,
-    "sourceLines": 3053,
+    "sourceLines": 3056,
     "largestDirectories": [
       {
         "directory": "src",
@@ -161,10 +161,10 @@
   "analysisNotes": "Archived ecommerce demo with product browsing; kept in the quieter section because it is older and less differentiated.",
   "git": {
     "branch": "ai/refine-gorilla-gainz-cycle-02",
-    "head": "e57cb32",
-    "lastCommitDate": "2026-05-21T00:01:05+03:00",
-    "lastCommitSubject": "Preserve verified work before AI refine gorilla-gainz",
-    "commitCount": 20,
+    "head": "105a887",
+    "lastCommitDate": "2026-09-03T23:42:38+03:00",
+    "lastCommitSubject": "Wire up the meta scripts",
+    "commitCount": 22,
     "remote": "https://github.com/BorisThoris/gorilla-gainz.git"
   },
   "readme": {
