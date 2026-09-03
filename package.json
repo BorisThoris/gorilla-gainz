@@ -34,10 +34,13 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "meta": "node scripts/generate-project-meta.mjs",
-    "meta:check": "node scripts/generate-project-meta.mjs --check"
+    "meta:check": "node scripts/generate-project-meta.mjs --check",
+    "shots": "node scripts/capture-project-shots.mjs",
+    "social": "node scripts/generate-social-preview.mjs",
+    "social:check": "node scripts/generate-social-preview.mjs --check"
   },
   "devDependencies": {
     "file-loader": "^1.1.11"
   },
-  "homepage": "https://BorisThoris.github.io/react-fitness-ecommerce-demo"
+  "homepage": "."
 }
