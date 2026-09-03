@@ -1,0 +1,51 @@
+{
+  "slug": "gorilla-gainz",
+  "capturedAt": "2026-09-03T21:40:56.630Z",
+  "source": "explicit",
+  "url": "http://127.0.0.1:4321/",
+  "recipe": {
+    "route": "/"
+  },
+  "profiles": [
+    {
+      "profile": "card",
+      "file": "card.jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 167853,
+      "status": "captured"
+    },
+    {
+      "profile": "desktop",
+      "file": "desktop.jpg",
+      "width": 1440,
+      "height": 900,
+      "bytes": 155388,
+      "status": "captured"
+    },
+    {
+      "profile": "mobile",
+      "file": "mobile.jpg",
+      "width": 430,
+      "height": 932,
+      "bytes": 34796,
+      "status": "captured"
+    },
+    {
+      "profile": "full",
+      "file": "full.jpg",
+      "width": 1440,
+      "height": 900,
+      "bytes": 137220,
+      "status": "captured"
+    },
+    {
+      "profile": "og",
+      "file": "og.jpg",
+      "width": 1200,
+      "height": 630,
+      "bytes": 107127,
+      "status": "captured"
+    }
+  ]
+}

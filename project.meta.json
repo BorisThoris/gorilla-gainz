@@ -1,7 +1,7 @@
 {
   "$schema": "./scripts/project.meta.schema.json",
   "schemaVersion": 1,
-  "generatedAt": "2026-09-03T20:45:32.583Z",
+  "generatedAt": "2026-09-03T21:50:31.028Z",
   "generatedBy": "scripts/generate-project-meta.mjs",
   "identity": {
     "slug": "gorilla-gainz",
@@ -24,7 +24,7 @@
   "links": {
     "deploymentUrl": "https://gorilla-gainz-git.pages.dev/",
     "localUrl": "http://127.0.0.1:4113/",
-    "homepage": "https://BorisThoris.github.io/react-fitness-ecommerce-demo",
+    "homepage": ".",
     "repository": "https://github.com/BorisThoris/gorilla-gainz"
   },
   "runtime": {
@@ -42,61 +42,64 @@
       "test",
       "eject",
       "meta",
-      "meta:check"
+      "meta:check",
+      "shots",
+      "social",
+      "social:check"
     ]
   },
   "capture": {
     "route": "/"
   },
   "media": {
-    "source": "portfolio-capture",
-    "directory": "C:/Users/Gaming PC/Desktop/Repos/portfolio/public/project-shots/gorilla-gainz/latest",
-    "primary": "/project-shots/gorilla-gainz/latest/card.jpg",
+    "source": "repo-local",
+    "directory": "C:/Users/Gaming PC/Desktop/Repos/react-fitness-ecommerce-demo/project-media",
+    "primary": "project-media/card.jpg",
     "images": [
       {
         "profile": "card",
         "file": "card.jpg",
-        "path": "/project-shots/gorilla-gainz/latest/card.jpg",
-        "bytes": 134574,
+        "path": "project-media/card.jpg",
+        "bytes": 167853,
         "width": 1600,
         "height": 900,
-        "capturedAt": "2026-08-27T12:17:43.801Z"
+        "capturedAt": "2026-09-03T21:40:46.593Z"
       },
       {
         "profile": "desktop",
         "file": "desktop.jpg",
-        "path": "/project-shots/gorilla-gainz/latest/desktop.jpg",
-        "bytes": 122605,
+        "path": "project-media/desktop.jpg",
+        "bytes": 155388,
         "width": 1440,
         "height": 900,
-        "capturedAt": "2026-08-27T12:17:47.431Z"
+        "capturedAt": "2026-09-03T21:40:48.966Z"
       },
       {
         "profile": "full",
         "file": "full.jpg",
-        "path": "/project-shots/gorilla-gainz/latest/full.jpg",
-        "bytes": 102334,
+        "path": "project-media/full.jpg",
+        "bytes": 137220,
         "width": 1440,
-        "height": 900,
-        "capturedAt": "2026-08-27T12:17:54.863Z"
-      },
-      {
-        "profile": "main",
-        "file": "main.png",
-        "path": "/project-shots/gorilla-gainz/main.png",
-        "bytes": 911765,
-        "width": 1440,
-        "height": 1000,
-        "capturedAt": "2026-05-15T20:52:20.791Z"
+        "height": 1036,
+        "capturedAt": "2026-09-03T21:40:53.906Z"
       },
       {
         "profile": "mobile",
         "file": "mobile.jpg",
-        "path": "/project-shots/gorilla-gainz/latest/mobile.jpg",
-        "bytes": 28786,
+        "path": "project-media/mobile.jpg",
+        "bytes": 34796,
         "width": 430,
         "height": 932,
-        "capturedAt": "2026-08-27T12:17:51.183Z"
+        "capturedAt": "2026-09-03T21:40:51.377Z"
+      },
+      {
+        "profile": "og",
+        "file": "og.jpg",
+        "path": "project-media/og.jpg",
+        "bytes": 107127,
+        "width": 1200,
+        "height": 630,
+        "capturedAt": "2026-09-03T21:40:56.559Z"
       }
     ]
   },
@@ -128,9 +131,9 @@
     "devDependencyCount": 1
   },
   "metrics": {
-    "sourceFiles": 42,
+    "sourceFiles": 44,
     "testFiles": 0,
-    "sourceLines": 3056,
+    "sourceLines": 3517,
     "largestDirectories": [
       {
         "directory": "src",
@@ -138,7 +141,7 @@
       },
       {
         "directory": "scripts",
-        "files": 2
+        "files": 4
       },
       {
         "directory": "public",
@@ -161,10 +164,10 @@
   "analysisNotes": "Archived ecommerce demo with product browsing; kept in the quieter section because it is older and less differentiated.",
   "git": {
     "branch": "ai/refine-gorilla-gainz-cycle-02",
-    "head": "105a887",
-    "lastCommitDate": "2026-09-03T23:42:38+03:00",
-    "lastCommitSubject": "Wire up the meta scripts",
-    "commitCount": 22,
+    "head": "0860841",
+    "lastCommitDate": "2026-09-03T23:46:16+03:00",
+    "lastCommitSubject": "Refresh project metadata",
+    "commitCount": 23,
     "remote": "https://github.com/BorisThoris/gorilla-gainz.git"
   },
   "readme": {
