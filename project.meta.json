@@ -1,7 +1,7 @@
 {
   "$schema": "./scripts/project.meta.schema.json",
   "schemaVersion": 1,
-  "generatedAt": "2026-09-03T21:50:31.028Z",
+  "generatedAt": "2026-09-14T20:41:27.912Z",
   "generatedBy": "scripts/generate-project-meta.mjs",
   "identity": {
     "slug": "gorilla-gainz",
@@ -45,7 +45,10 @@
       "meta:check",
       "shots",
       "social",
-      "social:check"
+      "social:check",
+      "icons",
+      "icons:check",
+      "meta:refresh"
     ]
   },
   "capture": {
@@ -131,9 +134,9 @@
     "devDependencyCount": 1
   },
   "metrics": {
-    "sourceFiles": 44,
+    "sourceFiles": 46,
     "testFiles": 0,
-    "sourceLines": 3517,
+    "sourceLines": 3991,
     "largestDirectories": [
       {
         "directory": "src",
@@ -141,7 +144,7 @@
       },
       {
         "directory": "scripts",
-        "files": 4
+        "files": 6
       },
       {
         "directory": "public",
@@ -164,10 +167,10 @@
   "analysisNotes": "Archived ecommerce demo with product browsing; kept in the quieter section because it is older and less differentiated.",
   "git": {
     "branch": "ai/refine-gorilla-gainz-cycle-02",
-    "head": "0860841",
-    "lastCommitDate": "2026-09-03T23:46:16+03:00",
-    "lastCommitSubject": "Refresh project metadata",
-    "commitCount": 23,
+    "head": "3bb8534",
+    "lastCommitDate": "2026-09-04T00:53:30+03:00",
+    "lastCommitSubject": "Wire up the shots and social scripts",
+    "commitCount": 25,
     "remote": "https://github.com/BorisThoris/gorilla-gainz.git"
   },
   "readme": {

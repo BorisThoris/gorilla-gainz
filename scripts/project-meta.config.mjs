@@ -63,6 +63,13 @@ export default {
     "imageUrlPath": "/og-image.jpg"
   },
 
+  // The icon set is rendered from favicon.svg by scripts/generate-app-icons.mjs.
+  icons: {
+    "background": "#1c1917",
+    "themeColor": "#1c1917",
+    "shortName": "Gorilla Gainz"
+  },
+
   media: {
     sourceDir: path.join(portfolioRoot, "public", "project-shots", "gorilla-gainz", "latest"),
     publicPathPrefix: "/project-shots/gorilla-gainz/latest",
