@@ -1,11 +1,11 @@
 {
   "$schema": "./scripts/project.meta.schema.json",
   "schemaVersion": 1,
-  "generatedAt": "2026-09-14T21:36:26.610Z",
+  "generatedAt": "2026-09-14T22:08:13.736Z",
   "generatedBy": "scripts/generate-project-meta.mjs",
   "identity": {
     "slug": "gorilla-gainz",
-    "repoName": "react-fitness-ecommerce-demo",
+    "repoName": "gorilla-gainz",
     "packageName": "gorilla-gainz",
     "version": "0.1.0",
     "title": "Gorilla Gainz",
@@ -136,7 +136,7 @@
   "metrics": {
     "sourceFiles": 46,
     "testFiles": 0,
-    "sourceLines": 4019,
+    "sourceLines": 4028,
     "largestDirectories": [
       {
         "directory": "src",
@@ -167,10 +167,10 @@
   "analysisNotes": "Archived ecommerce demo with product browsing; kept in the quieter section because it is older and less differentiated.",
   "git": {
     "branch": "ai/refine-gorilla-gainz-cycle-02",
-    "head": "abcfb74",
-    "lastCommitDate": "2026-09-14T23:59:30+03:00",
-    "lastCommitSubject": "Sync the metadata toolkit scripts and regenerate project.meta.json",
-    "commitCount": 27,
+    "head": "1dac1cc",
+    "lastCommitDate": "2026-09-15T00:42:54+03:00",
+    "lastCommitSubject": "Gate pushes on a current link-preview card and icon set",
+    "commitCount": 28,
     "remote": "https://github.com/BorisThoris/gorilla-gainz.git"
   },
   "readme": {
