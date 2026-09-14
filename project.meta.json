@@ -1,11 +1,11 @@
 {
   "$schema": "./scripts/project.meta.schema.json",
   "schemaVersion": 1,
-  "generatedAt": "2026-09-14T20:50:07.696Z",
+  "generatedAt": "2026-09-14T20:59:37.953Z",
   "generatedBy": "scripts/generate-project-meta.mjs",
   "identity": {
     "slug": "gorilla-gainz",
-    "repoName": "gorilla-master-wt",
+    "repoName": "react-fitness-ecommerce-demo-sync-wt",
     "packageName": "gorilla-gainz",
     "version": "0.1.0",
     "title": "Gorilla Gainz",
@@ -56,7 +56,7 @@
   },
   "media": {
     "source": "repo-local",
-    "directory": "C:/Users/Gaming PC/AppData/Local/Temp/claude/gorilla-master-wt/project-media",
+    "directory": "C:/Users/Gaming PC/AppData/Local/Temp/claude/react-fitness-ecommerce-demo-sync-wt/project-media",
     "primary": "project-media/card.jpg",
     "images": [
       {
@@ -66,7 +66,7 @@
         "bytes": 167853,
         "width": 1600,
         "height": 900,
-        "capturedAt": "2026-09-14T20:50:03.892Z"
+        "capturedAt": "2026-09-14T20:59:36.299Z"
       },
       {
         "profile": "desktop",
@@ -75,7 +75,7 @@
         "bytes": 155388,
         "width": 1440,
         "height": 900,
-        "capturedAt": "2026-09-14T20:50:03.894Z"
+        "capturedAt": "2026-09-14T20:59:36.303Z"
       },
       {
         "profile": "full",
@@ -84,7 +84,7 @@
         "bytes": 137220,
         "width": 1440,
         "height": 1036,
-        "capturedAt": "2026-09-14T20:50:03.896Z"
+        "capturedAt": "2026-09-14T20:59:36.305Z"
       },
       {
         "profile": "mobile",
@@ -93,7 +93,7 @@
         "bytes": 34796,
         "width": 430,
         "height": 932,
-        "capturedAt": "2026-09-14T20:50:03.899Z"
+        "capturedAt": "2026-09-14T20:59:36.310Z"
       },
       {
         "profile": "og",
@@ -102,7 +102,7 @@
         "bytes": 107127,
         "width": 1200,
         "height": 630,
-        "capturedAt": "2026-09-14T20:50:03.903Z"
+        "capturedAt": "2026-09-14T20:59:36.313Z"
       }
     ]
   },
@@ -136,7 +136,7 @@
   "metrics": {
     "sourceFiles": 46,
     "testFiles": 0,
-    "sourceLines": 4084,
+    "sourceLines": 4101,
     "largestDirectories": [
       {
         "directory": "src",
@@ -166,11 +166,11 @@
   },
   "analysisNotes": "Archived ecommerce demo with product browsing; kept in the quieter section because it is older and less differentiated.",
   "git": {
-    "branch": "meta/master-toolkit-gg",
-    "head": "c865363",
-    "lastCommitDate": "2026-09-14T23:50:04+03:00",
-    "lastCommitSubject": "Add the icon set and the one-command metadata refresh",
-    "commitCount": 23,
+    "branch": "meta/sync-abcfb74",
+    "head": "2c79956",
+    "lastCommitDate": "2026-09-14T23:50:09+03:00",
+    "lastCommitSubject": "Refresh project metadata for master",
+    "commitCount": 24,
     "remote": "https://github.com/BorisThoris/gorilla-gainz.git"
   },
   "readme": {
