@@ -1,7 +1,7 @@
 {
   "$schema": "./scripts/project.meta.schema.json",
   "schemaVersion": 1,
-  "generatedAt": "2026-09-14T22:08:31.843Z",
+  "generatedAt": "2026-09-14T23:24:20.574Z",
   "generatedBy": "scripts/generate-project-meta.mjs",
   "identity": {
     "slug": "gorilla-gainz",
@@ -56,53 +56,53 @@
   },
   "media": {
     "source": "repo-local",
-    "directory": "C:/Users/Gaming PC/AppData/Local/Temp/claude/react-fitness-ecommerce-demo-rf-wt/project-media",
+    "directory": "/home/runner/work/gorilla-gainz/gorilla-gainz/project-media",
     "primary": "project-media/card.jpg",
     "images": [
       {
         "profile": "card",
         "file": "card.jpg",
         "path": "project-media/card.jpg",
-        "bytes": 167853,
+        "bytes": 83622,
         "width": 1600,
         "height": 900,
-        "capturedAt": "2026-09-14T22:08:26.853Z"
+        "capturedAt": "2026-09-14T23:24:11.452Z"
       },
       {
         "profile": "desktop",
         "file": "desktop.jpg",
         "path": "project-media/desktop.jpg",
-        "bytes": 155388,
+        "bytes": 71042,
         "width": 1440,
         "height": 900,
-        "capturedAt": "2026-09-14T22:08:26.858Z"
+        "capturedAt": "2026-09-14T23:24:13.648Z"
       },
       {
         "profile": "full",
         "file": "full.jpg",
         "path": "project-media/full.jpg",
-        "bytes": 137220,
+        "bytes": 62767,
         "width": 1440,
         "height": 1036,
-        "capturedAt": "2026-09-14T22:08:26.861Z"
+        "capturedAt": "2026-09-14T23:24:18.263Z"
       },
       {
         "profile": "mobile",
         "file": "mobile.jpg",
         "path": "project-media/mobile.jpg",
-        "bytes": 34796,
+        "bytes": 24334,
         "width": 430,
         "height": 932,
-        "capturedAt": "2026-09-14T22:08:26.865Z"
+        "capturedAt": "2026-09-14T23:24:15.800Z"
       },
       {
         "profile": "og",
         "file": "og.jpg",
         "path": "project-media/og.jpg",
-        "bytes": 107127,
+        "bytes": 47138,
         "width": 1200,
         "height": 630,
-        "capturedAt": "2026-09-14T22:08:26.868Z"
+        "capturedAt": "2026-09-14T23:24:20.406Z"
       }
     ]
   },
@@ -166,12 +166,12 @@
   },
   "analysisNotes": "Archived ecommerce demo with product browsing; kept in the quieter section because it is older and less differentiated.",
   "git": {
-    "branch": "meta/rf-ae842df",
-    "head": "370aa03",
-    "lastCommitDate": "2026-09-15T00:43:09+03:00",
-    "lastCommitSubject": "Gate pushes on a current link-preview card and icon set",
-    "commitCount": 26,
-    "remote": "https://github.com/BorisThoris/gorilla-gainz.git"
+    "branch": "master",
+    "head": "2ab41c1",
+    "lastCommitDate": "2026-09-15T01:52:23+03:00",
+    "lastCommitSubject": "Let the refresh wait up to 90 minutes for a queued Cloudflare build [meta-bot]",
+    "commitCount": 28,
+    "remote": "https://github.com/BorisThoris/gorilla-gainz"
   },
   "readme": {
     "file": "README.md",

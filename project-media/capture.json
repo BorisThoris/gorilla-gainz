@@ -1,8 +1,8 @@
 {
   "slug": "gorilla-gainz",
-  "capturedAt": "2026-09-03T21:40:56.630Z",
-  "source": "explicit",
-  "url": "http://127.0.0.1:4321/",
+  "capturedAt": "2026-09-14T23:24:20.441Z",
+  "source": "deployment",
+  "url": "https://gorilla-gainz-git.pages.dev/",
   "recipe": {
     "route": "/"
   },
@@ -12,7 +12,7 @@
       "file": "card.jpg",
       "width": 1600,
       "height": 900,
-      "bytes": 167853,
+      "bytes": 83622,
       "status": "captured"
     },
     {
@@ -20,7 +20,7 @@
       "file": "desktop.jpg",
       "width": 1440,
       "height": 900,
-      "bytes": 155388,
+      "bytes": 71042,
       "status": "captured"
     },
     {
@@ -28,7 +28,7 @@
       "file": "mobile.jpg",
       "width": 430,
       "height": 932,
-      "bytes": 34796,
+      "bytes": 24334,
       "status": "captured"
     },
     {
@@ -36,7 +36,7 @@
       "file": "full.jpg",
       "width": 1440,
       "height": 900,
-      "bytes": 137220,
+      "bytes": 62767,
       "status": "captured"
     },
     {
@@ -44,7 +44,7 @@
       "file": "og.jpg",
       "width": 1200,
       "height": 630,
-      "bytes": 107127,
+      "bytes": 47138,
       "status": "captured"
     }
   ]
