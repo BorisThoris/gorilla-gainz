@@ -1,7 +1,7 @@
 {
   "$schema": "./scripts/project.meta.schema.json",
   "schemaVersion": 1,
-  "generatedAt": "2026-09-14T20:41:27.912Z",
+  "generatedAt": "2026-09-14T20:52:47.209Z",
   "generatedBy": "scripts/generate-project-meta.mjs",
   "identity": {
     "slug": "gorilla-gainz",
@@ -136,7 +136,7 @@
   "metrics": {
     "sourceFiles": 46,
     "testFiles": 0,
-    "sourceLines": 3991,
+    "sourceLines": 4008,
     "largestDirectories": [
       {
         "directory": "src",
@@ -167,10 +167,10 @@
   "analysisNotes": "Archived ecommerce demo with product browsing; kept in the quieter section because it is older and less differentiated.",
   "git": {
     "branch": "ai/refine-gorilla-gainz-cycle-02",
-    "head": "3bb8534",
-    "lastCommitDate": "2026-09-04T00:53:30+03:00",
-    "lastCommitSubject": "Wire up the shots and social scripts",
-    "commitCount": 25,
+    "head": "5dd147a",
+    "lastCommitDate": "2026-09-14T23:45:00+03:00",
+    "lastCommitSubject": "Add the icon set and the one-command metadata refresh",
+    "commitCount": 26,
     "remote": "https://github.com/BorisThoris/gorilla-gainz.git"
   },
   "readme": {
