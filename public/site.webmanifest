@@ -1,7 +1,7 @@
 {
   "name": "Gorilla Gainz",
   "short_name": "Gorilla Gainz",
-  "description": "An archived React ecommerce demo with product browsing and backend calls replaced by demo-safe placeholders.",
+  "description": "A React e-commerce demo for fitness gear: browse the catalogue and product pages, log in to manage a profile, and use the admin-only screens to add, update and remove products. An early React Router project preserved with demo-safe placeholders for its backend.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",

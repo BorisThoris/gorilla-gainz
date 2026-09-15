@@ -1,7 +1,7 @@
 {
   "$schema": "./scripts/project.meta.schema.json",
   "schemaVersion": 1,
-  "generatedAt": "2026-09-14T22:08:13.736Z",
+  "generatedAt": "2026-09-15T12:15:34.202Z",
   "generatedBy": "scripts/generate-project-meta.mjs",
   "identity": {
     "slug": "gorilla-gainz",
@@ -9,11 +9,12 @@
     "packageName": "gorilla-gainz",
     "version": "0.1.0",
     "title": "Gorilla Gainz",
-    "subtitle": "Fitness ecommerce archive",
-    "description": "An archived React ecommerce demo with product browsing and backend calls replaced by demo-safe placeholders.",
+    "subtitle": "A fitness store front with an admin back office",
+    "description": "A React e-commerce demo for fitness gear: browse the catalogue and product pages, log in to manage a profile, and use the admin-only screens to add, update and remove products. An early React Router project preserved with demo-safe placeholders for its backend.",
     "tags": [
       "React",
       "Ecommerce",
+      "React Router",
       "Archive"
     ],
     "accent": "#facc15",
@@ -136,7 +137,7 @@
   "metrics": {
     "sourceFiles": 46,
     "testFiles": 0,
-    "sourceLines": 4028,
+    "sourceLines": 4072,
     "largestDirectories": [
       {
         "directory": "src",
@@ -167,10 +168,10 @@
   "analysisNotes": "Archived ecommerce demo with product browsing; kept in the quieter section because it is older and less differentiated.",
   "git": {
     "branch": "ai/refine-gorilla-gainz-cycle-02",
-    "head": "1dac1cc",
-    "lastCommitDate": "2026-09-15T00:42:54+03:00",
-    "lastCommitSubject": "Gate pushes on a current link-preview card and icon set",
-    "commitCount": 28,
+    "head": "69eedfa",
+    "lastCommitDate": "2026-09-15T01:52:16+03:00",
+    "lastCommitSubject": "Let the refresh wait up to 90 minutes for a queued Cloudflare build [meta-bot]",
+    "commitCount": 30,
     "remote": "https://github.com/BorisThoris/gorilla-gainz.git"
   },
   "readme": {

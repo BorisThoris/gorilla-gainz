@@ -18,11 +18,12 @@ export default {
 
   curated: {
     "title": "Gorilla Gainz",
-    "subtitle": "Fitness ecommerce archive",
-    "description": "An archived React ecommerce demo with product browsing and backend calls replaced by demo-safe placeholders.",
+    "subtitle": "A fitness store front with an admin back office",
+    "description": "A React e-commerce demo for fitness gear: browse the catalogue and product pages, log in to manage a profile, and use the admin-only screens to add, update and remove products. An early React Router project preserved with demo-safe placeholders for its backend.",
     "tags": [
       "React",
       "Ecommerce",
+      "React Router",
       "Archive"
     ],
     "accent": "#facc15",
@@ -58,6 +59,7 @@ export default {
   // Graph tags, and the static directory the image is published from.
   social: {
     "htmlFile": "public/index.html",
+    "pageTitle": "Gorilla Gainz",
     "staticDir": "public",
     "imageName": "og-image.jpg",
     "imageUrlPath": "/og-image.jpg"
