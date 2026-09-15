@@ -1,7 +1,7 @@
 {
   "$schema": "./scripts/project.meta.schema.json",
   "schemaVersion": 1,
-  "generatedAt": "2026-09-15T12:23:20.038Z",
+  "generatedAt": "2026-09-15T12:47:03.525Z",
   "generatedBy": "scripts/generate-project-meta.mjs",
   "identity": {
     "slug": "gorilla-gainz",
@@ -57,7 +57,7 @@
   },
   "media": {
     "source": "repo-local",
-    "directory": "C:/Users/Gaming PC/AppData/Local/Temp/claude/react-fitness-ecommerce-demo-copy-wt/project-media",
+    "directory": "/home/runner/work/gorilla-gainz/gorilla-gainz/project-media",
     "primary": "project-media/card.jpg",
     "images": [
       {
@@ -67,7 +67,7 @@
         "bytes": 83622,
         "width": 1600,
         "height": 900,
-        "capturedAt": "2026-09-15T12:23:14.649Z"
+        "capturedAt": "2026-09-15T12:46:54.415Z"
       },
       {
         "profile": "desktop",
@@ -76,7 +76,7 @@
         "bytes": 71042,
         "width": 1440,
         "height": 900,
-        "capturedAt": "2026-09-15T12:23:14.653Z"
+        "capturedAt": "2026-09-15T12:46:56.664Z"
       },
       {
         "profile": "full",
@@ -85,7 +85,7 @@
         "bytes": 62767,
         "width": 1440,
         "height": 1036,
-        "capturedAt": "2026-09-15T12:23:14.660Z"
+        "capturedAt": "2026-09-15T12:47:01.214Z"
       },
       {
         "profile": "mobile",
@@ -94,7 +94,7 @@
         "bytes": 24334,
         "width": 430,
         "height": 932,
-        "capturedAt": "2026-09-15T12:23:14.666Z"
+        "capturedAt": "2026-09-15T12:46:58.959Z"
       },
       {
         "profile": "og",
@@ -103,7 +103,7 @@
         "bytes": 47138,
         "width": 1200,
         "height": 630,
-        "capturedAt": "2026-09-15T12:23:14.671Z"
+        "capturedAt": "2026-09-15T12:47:03.412Z"
       }
     ]
   },
@@ -167,12 +167,12 @@
   },
   "analysisNotes": "Archived ecommerce demo with product browsing; kept in the quieter section because it is older and less differentiated.",
   "git": {
-    "branch": "meta/copy-9cf094e",
-    "head": "ba8d869",
-    "lastCommitDate": "2026-09-14T23:24:20+00:00",
-    "lastCommitSubject": "Refresh screenshots, card, icons and metadata [meta-bot]",
-    "commitCount": 29,
-    "remote": "https://github.com/BorisThoris/gorilla-gainz.git"
+    "branch": "master",
+    "head": "3a64703",
+    "lastCommitDate": "2026-09-15T15:23:21+03:00",
+    "lastCommitSubject": "Say what the app actually is: specific title, blurb and tags for the card",
+    "commitCount": 30,
+    "remote": "https://github.com/BorisThoris/gorilla-gainz"
   },
   "readme": {
     "file": "README.md",
