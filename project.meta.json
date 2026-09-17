@@ -1,7 +1,7 @@
 {
   "$schema": "./scripts/project.meta.schema.json",
   "schemaVersion": 1,
-  "generatedAt": "2026-09-15T12:15:34.202Z",
+  "generatedAt": "2026-09-17T10:26:12.638Z",
   "generatedBy": "scripts/generate-project-meta.mjs",
   "identity": {
     "slug": "gorilla-gainz",
@@ -64,46 +64,46 @@
         "profile": "card",
         "file": "card.jpg",
         "path": "project-media/card.jpg",
-        "bytes": 167853,
+        "bytes": 171683,
         "width": 1600,
         "height": 900,
-        "capturedAt": "2026-09-03T21:40:46.593Z"
+        "capturedAt": "2026-09-17T10:26:05.749Z"
       },
       {
         "profile": "desktop",
         "file": "desktop.jpg",
         "path": "project-media/desktop.jpg",
-        "bytes": 155388,
+        "bytes": 162331,
         "width": 1440,
         "height": 900,
-        "capturedAt": "2026-09-03T21:40:48.966Z"
+        "capturedAt": "2026-09-17T10:26:07.232Z"
       },
       {
         "profile": "full",
         "file": "full.jpg",
         "path": "project-media/full.jpg",
-        "bytes": 137220,
+        "bytes": 217169,
         "width": 1440,
-        "height": 1036,
-        "capturedAt": "2026-09-03T21:40:53.906Z"
+        "height": 1606,
+        "capturedAt": "2026-09-17T10:26:10.321Z"
       },
       {
         "profile": "mobile",
         "file": "mobile.jpg",
         "path": "project-media/mobile.jpg",
-        "bytes": 34796,
+        "bytes": 55751,
         "width": 430,
         "height": 932,
-        "capturedAt": "2026-09-03T21:40:51.377Z"
+        "capturedAt": "2026-09-17T10:26:08.801Z"
       },
       {
         "profile": "og",
         "file": "og.jpg",
         "path": "project-media/og.jpg",
-        "bytes": 107127,
+        "bytes": 121420,
         "width": 1200,
         "height": 630,
-        "capturedAt": "2026-09-03T21:40:56.559Z"
+        "capturedAt": "2026-09-17T10:26:11.795Z"
       }
     ]
   },
@@ -168,10 +168,10 @@
   "analysisNotes": "Archived ecommerce demo with product browsing; kept in the quieter section because it is older and less differentiated.",
   "git": {
     "branch": "ai/refine-gorilla-gainz-cycle-02",
-    "head": "69eedfa",
-    "lastCommitDate": "2026-09-15T01:52:16+03:00",
-    "lastCommitSubject": "Let the refresh wait up to 90 minutes for a queued Cloudflare build [meta-bot]",
-    "commitCount": 30,
+    "head": "9cf094e",
+    "lastCommitDate": "2026-09-15T15:22:57+03:00",
+    "lastCommitSubject": "Say what the app actually is: specific title, blurb and tags for the card",
+    "commitCount": 31,
     "remote": "https://github.com/BorisThoris/gorilla-gainz.git"
   },
   "readme": {

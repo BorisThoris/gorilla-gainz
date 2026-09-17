@@ -1,8 +1,8 @@
 {
   "slug": "gorilla-gainz",
-  "capturedAt": "2026-09-03T21:40:56.630Z",
+  "capturedAt": "2026-09-17T10:26:11.987Z",
   "source": "explicit",
-  "url": "http://127.0.0.1:4321/",
+  "url": "http://127.0.0.1:8088/gorilla-gainz/",
   "recipe": {
     "route": "/"
   },
@@ -12,7 +12,7 @@
       "file": "card.jpg",
       "width": 1600,
       "height": 900,
-      "bytes": 167853,
+      "bytes": 171683,
       "status": "captured"
     },
     {
@@ -20,7 +20,7 @@
       "file": "desktop.jpg",
       "width": 1440,
       "height": 900,
-      "bytes": 155388,
+      "bytes": 162331,
       "status": "captured"
     },
     {
@@ -28,7 +28,7 @@
       "file": "mobile.jpg",
       "width": 430,
       "height": 932,
-      "bytes": 34796,
+      "bytes": 55751,
       "status": "captured"
     },
     {
@@ -36,7 +36,7 @@
       "file": "full.jpg",
       "width": 1440,
       "height": 900,
-      "bytes": 137220,
+      "bytes": 217169,
       "status": "captured"
     },
     {
@@ -44,7 +44,7 @@
       "file": "og.jpg",
       "width": 1200,
       "height": 630,
-      "bytes": 107127,
+      "bytes": 121420,
       "status": "captured"
     }
   ]
