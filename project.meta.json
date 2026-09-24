@@ -1,7 +1,7 @@
 {
   "$schema": "./scripts/project.meta.schema.json",
   "schemaVersion": 1,
-  "generatedAt": "2026-09-15T12:47:03.525Z",
+  "generatedAt": "2026-09-24T14:46:58.205Z",
   "generatedBy": "scripts/generate-project-meta.mjs",
   "identity": {
     "slug": "gorilla-gainz",
@@ -49,7 +49,9 @@
       "social:check",
       "icons",
       "icons:check",
-      "meta:refresh"
+      "meta:refresh",
+      "trailers",
+      "trailers:check"
     ]
   },
   "capture": {
@@ -67,7 +69,7 @@
         "bytes": 83622,
         "width": 1600,
         "height": 900,
-        "capturedAt": "2026-09-15T12:46:54.415Z"
+        "capturedAt": "2026-09-24T14:46:49.618Z"
       },
       {
         "profile": "desktop",
@@ -76,7 +78,7 @@
         "bytes": 71042,
         "width": 1440,
         "height": 900,
-        "capturedAt": "2026-09-15T12:46:56.664Z"
+        "capturedAt": "2026-09-24T14:46:51.715Z"
       },
       {
         "profile": "full",
@@ -85,7 +87,7 @@
         "bytes": 62767,
         "width": 1440,
         "height": 1036,
-        "capturedAt": "2026-09-15T12:47:01.214Z"
+        "capturedAt": "2026-09-24T14:46:55.917Z"
       },
       {
         "profile": "mobile",
@@ -94,7 +96,7 @@
         "bytes": 24334,
         "width": 430,
         "height": 932,
-        "capturedAt": "2026-09-15T12:46:58.959Z"
+        "capturedAt": "2026-09-24T14:46:53.835Z"
       },
       {
         "profile": "og",
@@ -103,7 +105,7 @@
         "bytes": 47138,
         "width": 1200,
         "height": 630,
-        "capturedAt": "2026-09-15T12:47:03.412Z"
+        "capturedAt": "2026-09-24T14:46:58.038Z"
       }
     ]
   },
@@ -135,9 +137,9 @@
     "devDependencyCount": 1
   },
   "metrics": {
-    "sourceFiles": 46,
+    "sourceFiles": 47,
     "testFiles": 0,
-    "sourceLines": 4165,
+    "sourceLines": 4746,
     "largestDirectories": [
       {
         "directory": "src",
@@ -145,7 +147,7 @@
       },
       {
         "directory": "scripts",
-        "files": 6
+        "files": 7
       },
       {
         "directory": "public",
@@ -168,10 +170,10 @@
   "analysisNotes": "Archived ecommerce demo with product browsing; kept in the quieter section because it is older and less differentiated.",
   "git": {
     "branch": "master",
-    "head": "3a64703",
-    "lastCommitDate": "2026-09-15T15:23:21+03:00",
-    "lastCommitSubject": "Say what the app actually is: specific title, blurb and tags for the card",
-    "commitCount": 30,
+    "head": "43ac397",
+    "lastCommitDate": "2026-09-24T16:47:26+03:00",
+    "lastCommitSubject": "Update the metadata toolkit scripts: trailers step, refresh --commit, capture.skip",
+    "commitCount": 34,
     "remote": "https://github.com/BorisThoris/gorilla-gainz"
   },
   "readme": {
