@@ -1,7 +1,7 @@
 {
   "$schema": "./scripts/project.meta.schema.json",
   "schemaVersion": 1,
-  "generatedAt": "2026-09-24T14:46:58.205Z",
+  "generatedAt": "2026-09-24T16:33:50.394Z",
   "generatedBy": "scripts/generate-project-meta.mjs",
   "identity": {
     "slug": "gorilla-gainz",
@@ -69,7 +69,7 @@
         "bytes": 83622,
         "width": 1600,
         "height": 900,
-        "capturedAt": "2026-09-24T14:46:49.618Z"
+        "capturedAt": "2026-09-24T16:33:42.070Z"
       },
       {
         "profile": "desktop",
@@ -78,7 +78,7 @@
         "bytes": 71042,
         "width": 1440,
         "height": 900,
-        "capturedAt": "2026-09-24T14:46:51.715Z"
+        "capturedAt": "2026-09-24T16:33:44.080Z"
       },
       {
         "profile": "full",
@@ -87,7 +87,7 @@
         "bytes": 62767,
         "width": 1440,
         "height": 1036,
-        "capturedAt": "2026-09-24T14:46:55.917Z"
+        "capturedAt": "2026-09-24T16:33:48.185Z"
       },
       {
         "profile": "mobile",
@@ -96,7 +96,7 @@
         "bytes": 24334,
         "width": 430,
         "height": 932,
-        "capturedAt": "2026-09-24T14:46:53.835Z"
+        "capturedAt": "2026-09-24T16:33:46.132Z"
       },
       {
         "profile": "og",
@@ -105,7 +105,7 @@
         "bytes": 47138,
         "width": 1200,
         "height": 630,
-        "capturedAt": "2026-09-24T14:46:58.038Z"
+        "capturedAt": "2026-09-24T16:33:50.224Z"
       }
     ]
   },
@@ -139,7 +139,7 @@
   "metrics": {
     "sourceFiles": 47,
     "testFiles": 0,
-    "sourceLines": 4746,
+    "sourceLines": 4769,
     "largestDirectories": [
       {
         "directory": "src",
@@ -170,10 +170,10 @@
   "analysisNotes": "Archived ecommerce demo with product browsing; kept in the quieter section because it is older and less differentiated.",
   "git": {
     "branch": "master",
-    "head": "43ac397",
-    "lastCommitDate": "2026-09-24T16:47:26+03:00",
+    "head": "ad517cd",
+    "lastCommitDate": "2026-09-24T19:17:05+03:00",
     "lastCommitSubject": "Update the metadata toolkit scripts: trailers step, refresh --commit, capture.skip",
-    "commitCount": 34,
+    "commitCount": 36,
     "remote": "https://github.com/BorisThoris/gorilla-gainz"
   },
   "readme": {
