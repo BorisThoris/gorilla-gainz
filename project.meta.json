@@ -1,7 +1,7 @@
 {
   "$schema": "./scripts/project.meta.schema.json",
   "schemaVersion": 1,
-  "generatedAt": "2026-09-27T13:38:26.311Z",
+  "generatedAt": "2026-09-27T14:47:45.162Z",
   "generatedBy": "scripts/generate-project-meta.mjs",
   "identity": {
     "slug": "gorilla-gainz",
@@ -72,7 +72,7 @@
         "bytes": 83622,
         "width": 1600,
         "height": 900,
-        "capturedAt": "2026-09-27T13:38:14.412Z"
+        "capturedAt": "2026-09-27T14:47:33.383Z"
       },
       {
         "profile": "desktop",
@@ -81,7 +81,7 @@
         "bytes": 71042,
         "width": 1440,
         "height": 900,
-        "capturedAt": "2026-09-27T13:38:17.343Z"
+        "capturedAt": "2026-09-27T14:47:36.364Z"
       },
       {
         "profile": "full",
@@ -90,7 +90,7 @@
         "bytes": 62767,
         "width": 1440,
         "height": 1036,
-        "capturedAt": "2026-09-27T13:38:23.215Z"
+        "capturedAt": "2026-09-27T14:47:42.089Z"
       },
       {
         "profile": "mobile",
@@ -99,7 +99,7 @@
         "bytes": 24334,
         "width": 430,
         "height": 932,
-        "capturedAt": "2026-09-27T13:38:20.231Z"
+        "capturedAt": "2026-09-27T14:47:39.182Z"
       },
       {
         "profile": "og",
@@ -108,7 +108,7 @@
         "bytes": 47138,
         "width": 1200,
         "height": 630,
-        "capturedAt": "2026-09-27T13:38:26.169Z"
+        "capturedAt": "2026-09-27T14:47:44.987Z"
       }
     ],
     "trailers": [
@@ -157,7 +157,7 @@
   "metrics": {
     "sourceFiles": 50,
     "testFiles": 2,
-    "sourceLines": 5602,
+    "sourceLines": 5607,
     "largestDirectories": [
       {
         "directory": "src",
@@ -188,10 +188,10 @@
   "analysisNotes": "Archived ecommerce demo with product browsing; kept in the quieter section because it is older and less differentiated.",
   "git": {
     "branch": "master",
-    "head": "b178273",
-    "lastCommitDate": "2026-09-27T16:35:29+03:00",
-    "lastCommitSubject": "A media strategy with tests: screenshots that show the app, a recorded trailer, a gated refresh",
-    "commitCount": 38,
+    "head": "c158239",
+    "lastCommitDate": "2026-09-27T17:33:54+03:00",
+    "lastCommitSubject": "Update the metadata toolkit scripts: trailers step, refresh --commit, capture.skip",
+    "commitCount": 40,
     "remote": "https://github.com/BorisThoris/gorilla-gainz"
   },
   "readme": {
