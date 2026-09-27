@@ -1,7 +1,7 @@
 {
   "$schema": "./scripts/project.meta.schema.json",
   "schemaVersion": 1,
-  "generatedAt": "2026-09-27T13:35:20.207Z",
+  "generatedAt": "2026-09-27T13:38:26.311Z",
   "generatedBy": "scripts/generate-project-meta.mjs",
   "identity": {
     "slug": "gorilla-gainz",
@@ -62,53 +62,53 @@
   },
   "media": {
     "source": "repo-local",
-    "directory": "C:/Users/GAMING~1/AppData/Local/Temp/media-rollout-nLVMjz/project-media",
+    "directory": "/home/runner/work/gorilla-gainz/gorilla-gainz/project-media",
     "primary": "project-media/card.jpg",
     "images": [
       {
         "profile": "card",
         "file": "card.jpg",
         "path": "project-media/card.jpg",
-        "bytes": 167853,
+        "bytes": 83622,
         "width": 1600,
         "height": 900,
-        "capturedAt": "2026-09-27T13:34:39.337Z"
+        "capturedAt": "2026-09-27T13:38:14.412Z"
       },
       {
         "profile": "desktop",
         "file": "desktop.jpg",
         "path": "project-media/desktop.jpg",
-        "bytes": 155388,
+        "bytes": 71042,
         "width": 1440,
         "height": 900,
-        "capturedAt": "2026-09-27T13:34:43.875Z"
+        "capturedAt": "2026-09-27T13:38:17.343Z"
       },
       {
         "profile": "full",
         "file": "full.jpg",
         "path": "project-media/full.jpg",
-        "bytes": 137220,
+        "bytes": 62767,
         "width": 1440,
         "height": 1036,
-        "capturedAt": "2026-09-27T13:34:53.436Z"
+        "capturedAt": "2026-09-27T13:38:23.215Z"
       },
       {
         "profile": "mobile",
         "file": "mobile.jpg",
         "path": "project-media/mobile.jpg",
-        "bytes": 34796,
+        "bytes": 24334,
         "width": 430,
         "height": 932,
-        "capturedAt": "2026-09-27T13:34:48.654Z"
+        "capturedAt": "2026-09-27T13:38:20.231Z"
       },
       {
         "profile": "og",
         "file": "og.jpg",
         "path": "project-media/og.jpg",
-        "bytes": 107127,
+        "bytes": 47138,
         "width": 1200,
         "height": 630,
-        "capturedAt": "2026-09-27T13:34:58.623Z"
+        "capturedAt": "2026-09-27T13:38:26.169Z"
       }
     ],
     "trailers": [
@@ -187,12 +187,12 @@
   },
   "analysisNotes": "Archived ecommerce demo with product browsing; kept in the quieter section because it is older and less differentiated.",
   "git": {
-    "branch": "HEAD",
-    "head": "8888f56",
-    "lastCommitDate": "2026-09-24T16:33:50+00:00",
-    "lastCommitSubject": "Refresh screenshots, card, icons and metadata [meta-bot]",
-    "commitCount": 37,
-    "remote": "https://github.com/BorisThoris/gorilla-gainz.git"
+    "branch": "master",
+    "head": "b178273",
+    "lastCommitDate": "2026-09-27T16:35:29+03:00",
+    "lastCommitSubject": "A media strategy with tests: screenshots that show the app, a recorded trailer, a gated refresh",
+    "commitCount": 38,
+    "remote": "https://github.com/BorisThoris/gorilla-gainz"
   },
   "readme": {
     "file": "README.md",

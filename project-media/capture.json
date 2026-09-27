@@ -1,6 +1,6 @@
 {
   "slug": "gorilla-gainz",
-  "capturedAt": "2026-09-27T13:35:11.673Z",
+  "capturedAt": "2026-09-27T13:38:26.201Z",
   "source": "deployment",
   "url": "https://gorilla-gainz-git.pages.dev/",
   "recipe": {
@@ -13,14 +13,14 @@
       "file": "card.jpg",
       "width": 1600,
       "height": 900,
-      "bytes": 167853,
+      "bytes": 83622,
       "status": "captured",
       "stats": {
-        "mean": 78,
-        "std": 79,
-        "dark": 0.356,
-        "light": 0.044,
-        "colours": 97
+        "mean": 74,
+        "std": 77,
+        "dark": 0.114,
+        "light": 0.045,
+        "colours": 61
       }
     },
     {
@@ -28,14 +28,14 @@
       "file": "desktop.jpg",
       "width": 1440,
       "height": 900,
-      "bytes": 155388,
+      "bytes": 71042,
       "status": "captured",
       "stats": {
-        "mean": 69,
-        "std": 80,
-        "dark": 0.407,
+        "mean": 65,
+        "std": 76,
+        "dark": 0.118,
         "light": 0.033,
-        "colours": 100
+        "colours": 64
       }
     },
     {
@@ -43,14 +43,14 @@
       "file": "mobile.jpg",
       "width": 430,
       "height": 932,
-      "bytes": 34796,
+      "bytes": 24334,
       "status": "captured",
       "stats": {
-        "mean": 54,
-        "std": 82,
-        "dark": 0.598,
-        "light": 0.003,
-        "colours": 86
+        "mean": 60,
+        "std": 78,
+        "dark": 0.032,
+        "light": 0.007,
+        "colours": 62
       }
     },
     {
@@ -58,14 +58,14 @@
       "file": "full.jpg",
       "width": 1440,
       "height": 900,
-      "bytes": 137220,
+      "bytes": 62767,
       "status": "captured",
       "stats": {
-        "mean": 69,
-        "std": 80,
-        "dark": 0.407,
+        "mean": 65,
+        "std": 76,
+        "dark": 0.118,
         "light": 0.033,
-        "colours": 100
+        "colours": 64
       }
     },
     {
@@ -73,14 +73,14 @@
       "file": "og.jpg",
       "width": 1200,
       "height": 630,
-      "bytes": 107127,
+      "bytes": 47138,
       "status": "captured",
       "stats": {
-        "mean": 65,
-        "std": 83,
-        "dark": 0.43,
-        "light": 0.058,
-        "colours": 90
+        "mean": 62,
+        "std": 80,
+        "dark": 0.097,
+        "light": 0.061,
+        "colours": 53
       }
     }
   ]
