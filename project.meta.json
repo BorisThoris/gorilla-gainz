@@ -1,7 +1,7 @@
 {
   "$schema": "./scripts/project.meta.schema.json",
   "schemaVersion": 1,
-  "generatedAt": "2026-09-27T17:38:37.334Z",
+  "generatedAt": "2026-09-27T17:42:52.253Z",
   "generatedBy": "scripts/generate-project-meta.mjs",
   "identity": {
     "slug": "gorilla-gainz",
@@ -62,53 +62,53 @@
   },
   "media": {
     "source": "repo-local",
-    "directory": "C:/Users/Gaming PC/Documents/Codex/2026-09-27/new-chat/work/publish-gorilla/project-media",
+    "directory": "/home/runner/work/gorilla-gainz/gorilla-gainz/project-media",
     "primary": "project-media/card.jpg",
     "images": [
       {
         "profile": "card",
         "file": "card.jpg",
         "path": "project-media/card.jpg",
-        "bytes": 180588,
+        "bytes": 176530,
         "width": 1600,
         "height": 900,
-        "capturedAt": "2026-09-27T17:37:00.075Z"
+        "capturedAt": "2026-09-27T17:42:47.526Z"
       },
       {
         "profile": "desktop",
         "file": "desktop.jpg",
         "path": "project-media/desktop.jpg",
-        "bytes": 173249,
+        "bytes": 170311,
         "width": 1440,
         "height": 900,
-        "capturedAt": "2026-09-27T17:37:01.228Z"
+        "capturedAt": "2026-09-27T17:42:48.606Z"
       },
       {
         "profile": "full",
         "file": "full.jpg",
         "path": "project-media/full.jpg",
-        "bytes": 252454,
+        "bytes": 247928,
         "width": 1440,
         "height": 1693,
-        "capturedAt": "2026-09-27T17:37:03.547Z"
+        "capturedAt": "2026-09-27T17:42:50.853Z"
       },
       {
         "profile": "mobile",
         "file": "mobile.jpg",
         "path": "project-media/mobile.jpg",
-        "bytes": 55961,
+        "bytes": 54790,
         "width": 430,
         "height": 932,
-        "capturedAt": "2026-09-27T17:37:02.327Z"
+        "capturedAt": "2026-09-27T17:42:49.694Z"
       },
       {
         "profile": "og",
         "file": "og.jpg",
         "path": "project-media/og.jpg",
-        "bytes": 107957,
+        "bytes": 105465,
         "width": 1200,
         "height": 630,
-        "capturedAt": "2026-09-27T17:37:04.683Z"
+        "capturedAt": "2026-09-27T17:42:52.117Z"
       }
     ],
     "trailers": [
@@ -187,12 +187,12 @@
   },
   "analysisNotes": "Original visual identity and product-management flow preserved, with durable bag, demo checkout, responsive catalogue filters and local illustration assets. Verified complete browser workflow and accessible page structure.",
   "git": {
-    "branch": "codex/gorilla-storefront",
-    "head": "34e4193",
-    "lastCommitDate": "2026-09-27T20:37:32+03:00",
-    "lastCommitSubject": "Complete local storefront flows while preserving Gorilla Gainz design",
-    "commitCount": 42,
-    "remote": "https://github.com/BorisThoris/gorilla-gainz.git"
+    "branch": "master",
+    "head": "52a0f65",
+    "lastCommitDate": "2026-09-27T20:39:58+03:00",
+    "lastCommitSubject": "Refresh original-design store screenshots and workflow trailer",
+    "commitCount": 43,
+    "remote": "https://github.com/BorisThoris/gorilla-gainz"
   },
   "readme": {
     "file": "README.md",
