@@ -1,75 +1,30 @@
-import $ from "jquery";
-import React from 'react';
-import notify from "../services/notify.js";
-import remote from "../services/remote.js";
-import auth from "../services/authService.js";
-
-let products = (() => {
-    let demoProducts = [
-        {
-            _id: "demo-barbell-kit",
-            price: 149,
-            imgUrl: "https://images.unsplash.com/photo-1534367507873-d2d7e24c797f?auto=format&fit=crop&w=900&q=80",
-            productDesc: "Starter barbell and plate bundle for the archived Gorilla Gainz store demo.",
-            productName: "Barbell Kit"
-        },
-        {
-            _id: "demo-training-gloves",
-            price: 29,
-            imgUrl: "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=900&q=80",
-            productDesc: "Grip gloves with wrist support, included as mock catalogue data for local demos.",
-            productName: "Training Gloves"
-        },
-        {
-            _id: "demo-shaker-pack",
-            price: 18,
-            imgUrl: "https://images.unsplash.com/photo-1593079831268-3381b0db4a77?auto=format&fit=crop&w=900&q=80",
-            productDesc: "Reusable shaker pack used to keep the product detail and catalogue flows runnable without Kinvey.",
-            productName: "Shaker Pack"
-        }
-    ];
-
-    function getAllProducts() {
-        return Promise.resolve(demoProducts);
-    }
-    
-    function createProduct(price, imgUrl, productDesc, productName) {
-        let data = { _id: `demo-product-${Date.now()}`, price, imgUrl, productDesc, productName};
-
-        demoProducts = [data].concat(demoProducts);
-        return Promise.resolve(data);
-    }
-
-    function editProduct(price, imgUrl, productDesc, productName, productId) {
-        let data = { _id: productId, price, imgUrl, productDesc, productName};
-
-        demoProducts = demoProducts.map(product =>
-            product._id === productId ? data : product
-        );
-        return Promise.resolve(data);
-    }
-    
-    function deleteProduct(postId) {
-        demoProducts = demoProducts.filter(product => product._id !== postId);
-        return Promise.resolve({ _id: postId });
-    }
-
-   
-
-    function getProductById(postId) {
-        return Promise.resolve(
-            demoProducts.find(product => product._id === postId) || demoProducts[0]
-        );
-    }
-
-    return {
-        getAllProducts,
-        createProduct,
-        editProduct,
-        deleteProduct,
-        getProductById,
-        
-        
-    }
-})();
-export default products;
+import { gear } from '../store/gear';
+const key = 'gorilla-gainz-products-v1';
+let catalogue = gear.map(item => ({ ...item }));
+try {
+  const saved = JSON.parse(localStorage.getItem(key));
+  if (Array.isArray(saved) && saved.every(item => item && typeof item._id === 'string' && typeof item.productName === 'string' && Number.isFinite(Number(item.price)) && Number(item.price) > 0)) catalogue = saved;
+} catch (_) { /* A damaged local draft cannot prevent the sample store opening. */ }
+function persist(next) { localStorage.setItem(key, JSON.stringify(next)); catalogue = next; }
+function validated(price, imgUrl, productDesc, productName) {
+  if (!Number.isFinite(Number(price)) || Number(price) <= 0 || Number(price) > 100000) throw Error('Enter a price between $0.01 and $100,000.');
+  if (!productName.trim() || productName.trim().length > 80) throw Error('Give the product a name of up to 80 characters.');
+  if (!productDesc.trim() || productDesc.trim().length > 1200) throw Error('Add a description of up to 1,200 characters.');
+  if (!/^(https?:\/\/|\/[^/])/.test(imgUrl)) throw Error('Use an image URL starting with https:// or a local /gear/ path.');
+  return { price: Math.round(Number(price) * 100) / 100, imgUrl, productDesc: productDesc.trim(), productName: productName.trim() };
+}
+export default {
+  getAllProducts: () => Promise.resolve(catalogue.map(item => ({ ...item }))),
+  getProductById: id => Promise.resolve(catalogue.find(item => item._id === id) || null),
+  createProduct: (price, imgUrl, productDesc, productName) => Promise.resolve().then(() => {
+    const item = { ...validated(price, imgUrl, productDesc, productName), _id: 'product-' + Date.now() + '-' + Math.random().toString(36).slice(2,7) };
+    persist([item, ...catalogue]); return item;
+  }),
+  editProduct: (price, imgUrl, productDesc, productName, id) => Promise.resolve().then(() => {
+    const existing = catalogue.find(item => item._id === id);
+    if (!existing) throw Error('This product has been removed.');
+    const item = { ...existing, ...validated(price, imgUrl, productDesc, productName) };
+    persist(catalogue.map(old => old._id === id ? item : old)); return item;
+  }),
+  deleteProduct: id => Promise.resolve().then(() => { persist(catalogue.filter(item => item._id !== id)); return { _id: id }; })
+};

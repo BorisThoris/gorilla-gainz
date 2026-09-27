@@ -1,120 +1,39 @@
 # Gorilla Gainz
 
-Historical SoftUni React project originally built as **Gorilla Gainz**.
+An independent fitness-store concept built from the original React project. Browse six locally illustrated products, filter the collection, inspect gear, build a persistent bag and complete a clearly marked practice checkout. No payments, deliveries or external account services are involved.
 
-This is a React 16 single-page e-commerce demo for browsing fitness products, logging in, managing a profile, and using admin-only product management workflows. It is kept as a portfolio/archive project that shows early React, routing, session handling, REST API calls, conditional UI, form validation, and product CRUD work.
+## Run
 
-## What It Demonstrates
-
-- React class-component application structure.
-- React Router page routing.
-- Conditional navigation based on logged-in state.
-- Session storage based authentication state.
-- Product catalogue and product detail pages.
-- Admin-only product creation, update, and deletion.
-- Profile image editing.
-- YouTube media page integration.
-- jQuery AJAX service layer for Kinvey-style REST endpoints.
-- UI feedback through a custom notification helper.
-- Styling with CSS, Bootstrap, React Bootstrap, and Ant Design components.
-- GitHub Pages deployment configuration.
-
-## Tech Stack
-
-- React 16
-- JavaScript
-- React Router / React Router DOM
-- React Bootstrap / Bootstrap
-- Ant Design
-- jQuery AJAX
-- Kinvey-style REST API integration
-- React YouTube
-- GitHub Pages
-- Create React App / `react-scripts@1.1.4`
-
-## Main Routes
-
-- `/` and `/home` - media/home page
-- `/about` - about/comment-style page
-- `/login` - login
-- `/register` - registration
-- `/catalogue` - product catalogue
-- `/product-view/:id` - product detail and admin edit/delete
-- `/user-profile` - profile view/update
-- `/update` - update route placeholder
-
-## Project Structure
-
-```text
-src/
-  routes/       page-level routes
-  components/   navbar, product cards, product creator, media helpers
-  services/     auth, product, profile, remote API, notifications
-  style/        app-specific CSS and image assets
-```
-
-## Running Locally
-
-This project was built with Create React App 1 and old dependency versions. A modern Node version may not install or build it cleanly without using an older Node/npm environment.
-
-```bash
+```powershell
 npm install
 npm start
-```
-
-Then open:
-
-```text
-http://localhost:3000
-```
-
-For demo review, products, login/register, and profile reads/updates use in-memory mock data. Login accepts any non-empty-looking credentials and returns an admin demo session so catalogue create/update/delete controls can be exercised locally. The npm scripts set the legacy Create React App environment flags needed for modern Node versions.
-
-## Verify
-
-```bash
 npm run build
+$env:CI='true'; npm test -- --runInBand
 ```
 
-## Deployment
+The production output is `build/`. Serve it with SPA history fallback at the domain root. Product detail URLs support direct loads and refreshes; the root-based asset paths target the existing Cloudflare Pages deployment.
 
-The project includes a GitHub Pages deployment script:
+The original React16/Create React App1 toolchain remains. `scripts/run-react.cjs` applies its OpenSSL compatibility flag on modern Node. `CI=true` makes its historical test runner exit instead of entering watch mode.
 
-```bash
-npm run deploy
-```
+## Try the store
 
-The `homepage` field points to:
+- Products: browse Strength, Mobility and Accessories, search, set a maximum price and sort numerically.
+- Product pages: inspect a product and add a quantity to the bag. The bag persists locally, supports quantity changes/removal and computes current catalogue totals.
+- Complete demo order: produces a receipt for that visit and clears the bag. No address, card, email or password is requested.
+- Login / Profile: choose a local Shopper or Store editor session. Editor mode retains the original create/update/delete workflow, with editable drafts, image previews, validation, cancellation and removal confirmation. This is a demonstration role selector, not production authorization.
+- Catalogue changes persist in `gorilla-gainz-products-v1`; the bag uses `gorilla-gainz-bag-v1`. Existing valid catalogue data is retained. Storage failures preserve the current draft and report a failure instead of pretending a save succeeded.
 
-```text
-https://BorisThoris.github.io/react-fitness-ecommerce-demo
-```
+## Implementation and artwork
 
-## Security / Backend Note
+`src/store/Store.jsx` contains the current React Router storefront and class components. `src/store/bag.js` owns bag persistence; `src/services/productsService.js` retains the product API and validates writes. The original gorilla image, green photographic background, Media / Products navigation and sidebar catalogue are retained. The original training video is available from Media; it loads only when the visitor chooses Play. Historical route components remain in source.
 
-The original student project used a Kinvey backend. Historical app keys/secrets have been removed from the source and replaced with placeholders. The current demo path uses local mock data; to restore backend-backed flows, reconnect the service modules to `src/services/remote.js` and provide your own Kinvey-compatible app key and secret.
+`public/gear/` contains six original SVG product illustrations, reproducible with `node scripts/generate-gear-art.cjs`. They are illustrations of fictional catalogue items, not third-party product photographs. Catalogue browsing makes no external asset request. Playing the original training video explicitly loads YouTube.
 
-Because this is an archived portfolio project, the original hosted backend may no longer exist.
+Barlow Condensed and DM Sans are self-hosted under `public/fonts/`, with their SIL Open Font License files. Originals: https://github.com/google/fonts/tree/main/ofl/barlowcondensed and https://github.com/google/fonts/tree/main/ofl/dmsans.
 
-## Status
+## Verification
 
-Archived portfolio project. The goal of this repository is to show early React application work, not to represent current production practices.
+Production build and five product/bag regression tests pass. Actual desktop browser checks cover filtering, sorting, detail refresh, persistent quantities/totals, checkout receipt and editor create/edit/cancel/delete/reload. Mobile routes at390x844 are checked for overflow. Current screenshots and acceptance details are delivered in the repository refinement workspace.
 
-Known limitations:
+This remains a local-data portfolio store. A real commerce backend, secure identity, inventory, payments and fulfilment are outside its demo scope.
 
-- Old React/Create React App dependency stack.
-- Backend configuration is intentionally removed.
-- Some code and naming reflect its 2019 student-project origin.
-- No modernization/refactor pass has been applied.
-
-## Cloudflare Pages
-
-- Pages project name: `gorilla-gainz`
-- GitHub repository: `BorisThoris/gorilla-gainz`
-- Production branch: `master`
-- Root directory: `.`
-- Build command: `SKIP_PREFLIGHT_CHECK=true NODE_OPTIONS=--openssl-legacy-provider npx react-scripts build`
-- Build output directory: `build`
-- Public URL target: `https://gorilla-gainz.pages.dev/`
-
-Do not enable Cloudflare Access for the demo deployment. Leave frame-blocking headers unset so the portfolio can iframe the public build.

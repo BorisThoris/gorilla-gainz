@@ -1,44 +1,33 @@
-// Metadata inputs for this repository - unique to react-fitness-ecommerce-demo.
-//
-// Everything here is curated by hand: identity, commands, the screenshot recipe
-// (capture), the recorded trailer (trailers.items, kind: capture) and where the
-// card, icons and trailers are published. scripts/generate-project-meta.mjs
-// derives the rest into project.meta.json; scripts/project-media.test.mjs
-// checks that everything here was actually produced.
-//   npm run meta:refresh   trailers -> shots -> social -> icons -> meta
-//   npm run test:media     the media contract
-
+// Curated identity and actual local store captures.
 import path from 'node:path';
-
 const portfolioRoot = process.env.PORTFOLIO_ROOT ?? String.raw`C:\Users\Gaming PC\Desktop\Repos\portfolio`;
-
 export default {
   "slug": "gorilla-gainz",
   "classification": "web-app",
   "curated": {
     "title": "Gorilla Gainz",
-    "subtitle": "A fitness store front with an admin back office",
-    "description": "A React e-commerce demo for fitness gear: browse the catalogue and product pages, log in to manage a profile, and use the admin-only screens to add, update and remove products. An early React Router project preserved with demo-safe placeholders for its backend.",
+    "subtitle": "Fitness gear, with the original Gorilla Gainz character",
+    "description": "A React fitness store with its original gorilla imagery, green backdrop and sidebar catalogue. Browse and filter six illustrated products, inspect details, keep a shopping bag and try a clearly marked demo checkout. A local editor session supports product creation, updates and removal with persistent drafts and catalogue data.",
     "tags": [
       "React",
       "Ecommerce",
       "React Router",
-      "Archive"
+      "Local data"
     ],
-    "accent": "#facc15",
+    "accent": "#2f6f4e",
     "deploymentUrl": "https://gorilla-gainz-git.pages.dev/",
-    "localUrl": "http://127.0.0.1:4113/",
+    "localUrl": "http://127.0.0.1:4514/",
     "buildCommand": "npm run build",
     "buildOutput": "build",
-    "serveBasePath": "/react-fitness-ecommerce-demo",
-    "runCommand": "npm start",
-    "devPort": 4113,
+    "runCommand": "node scripts/serve-demo.cjs build 4514",
+    "devPort": 4514,
     "showcaseTier": "showcase",
     "showcaseOrder": 9
   },
   "capture": {
-    "route": "/",
-    "waitAfterReadyMs": 2000
+    "route": "/catalogue",
+    "readySelector": ".gear-card",
+    "waitAfterReadyMs": 700
   },
   "scores": {
     "priorityScore": 82,
@@ -48,7 +37,7 @@ export default {
     "uniquenessScore": 54,
     "maintenanceScore": 52
   },
-  "analysisNotes": "Archived ecommerce demo with product browsing; kept in the quieter section because it is older and less differentiated.",
+  "analysisNotes": "Original visual identity and product-management flow preserved, with durable bag, demo checkout, responsive catalogue filters and local illustration assets. Verified complete browser workflow and accessible page structure.",
   "social": {
     "htmlFile": "public/index.html",
     "pageTitle": "Gorilla Gainz",
@@ -70,89 +59,86 @@ export default {
     "items": [
       {
         "id": "tour",
-        "title": "Gorilla Gainz: the store front",
+        "title": "Gorilla Gainz: catalogue, product and demo bag",
         "kind": "capture",
         "inputs": [
           "src",
           "public/index.html"
         ],
-        "source": "deployment",
+        "source": "local",
         "music": "project-media/music/tour.m4a",
         "posterAt": 0.5,
         "recipe": {
-          "route": "/",
+          "route": "/catalogue",
           "viewport": {
             "width": 1280,
             "height": 720
           },
-          "durationMs": 20000,
+          "durationMs": 18000,
           "setup": {
-            "actions": [
-              {
-                "type": "waitFor",
-                "target": {
-                  "role": "link",
-                  "name": "Media"
-                },
-                "state": "visible",
-                "label": "wait for the nav"
-              }
-            ],
-            "waitAfterReadyMs": 1500
+            "readySelector": ".gear-card",
+            "waitAfterReadyMs": 800
           },
           "timeline": [
             {
-              "type": "scroll",
-              "deltaY": 500,
-              "steps": 3
+              "type": "click",
+              "target": {
+                "role": "button",
+                "name": "Strength",
+                "exact": true
+              }
             },
             {
               "type": "wait",
-              "ms": 1500
+              "ms": 1600
             },
             {
               "type": "click",
               "target": {
                 "role": "link",
-                "name": "Media"
-              },
-              "label": "media",
-              "optional": true
+                "name": "View Foundation Barbell",
+                "exact": true
+              }
             },
             {
               "type": "wait",
-              "ms": 3500
+              "ms": 2100
             },
             {
-              "type": "scroll",
-              "deltaY": 500,
-              "steps": 3
+              "type": "click",
+              "target": {
+                "role": "button",
+                "name": "Add to bag +",
+                "exact": true
+              }
+            },
+            {
+              "type": "wait",
+              "ms": 700
             },
             {
               "type": "click",
               "target": {
                 "role": "link",
-                "name": "Login"
-              },
-              "label": "login",
-              "optional": true
+                "name": "Shopping bag, 1 items",
+                "exact": true
+              }
             },
             {
               "type": "wait",
-              "ms": 3000
+              "ms": 2300
             },
             {
               "type": "click",
               "target": {
-                "role": "link",
-                "name": "Register"
-              },
-              "label": "register",
-              "optional": true
+                "role": "button",
+                "name": "Complete demo order",
+                "exact": true
+              }
             },
             {
               "type": "wait",
-              "ms": 3000
+              "ms": 2300
             }
           ]
         }
