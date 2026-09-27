@@ -1,7 +1,7 @@
 {
   "$schema": "./scripts/project.meta.schema.json",
   "schemaVersion": 1,
-  "generatedAt": "2026-09-27T14:47:45.162Z",
+  "generatedAt": "2026-09-27T17:38:37.334Z",
   "generatedBy": "scripts/generate-project-meta.mjs",
   "identity": {
     "slug": "gorilla-gainz",
@@ -9,32 +9,31 @@
     "packageName": "gorilla-gainz",
     "version": "0.1.0",
     "title": "Gorilla Gainz",
-    "subtitle": "A fitness store front with an admin back office",
-    "description": "A React e-commerce demo for fitness gear: browse the catalogue and product pages, log in to manage a profile, and use the admin-only screens to add, update and remove products. An early React Router project preserved with demo-safe placeholders for its backend.",
+    "subtitle": "Fitness gear, with the original Gorilla Gainz character",
+    "description": "A React fitness store with its original gorilla imagery, green backdrop and sidebar catalogue. Browse and filter six illustrated products, inspect details, keep a shopping bag and try a clearly marked demo checkout. A local editor session supports product creation, updates and removal with persistent drafts and catalogue data.",
     "tags": [
       "React",
       "Ecommerce",
       "React Router",
-      "Archive"
+      "Local data"
     ],
-    "accent": "#facc15",
+    "accent": "#2f6f4e",
     "classification": "web-app",
     "showcaseTier": "showcase",
     "showcaseOrder": 9
   },
   "links": {
     "deploymentUrl": "https://gorilla-gainz-git.pages.dev/",
-    "localUrl": "http://127.0.0.1:4113/",
-    "homepage": ".",
+    "localUrl": "http://127.0.0.1:4514/",
+    "homepage": "/",
     "repository": "https://github.com/BorisThoris/gorilla-gainz"
   },
   "runtime": {
     "packageManager": "npm",
     "buildCommand": "npm run build",
     "buildOutput": "build",
-    "runCommand": "npm start",
-    "devPort": 4113,
-    "serveBasePath": "/react-fitness-ecommerce-demo",
+    "runCommand": "node scripts/serve-demo.cjs build 4514",
+    "devPort": 4514,
     "scripts": [
       "start",
       "build",
@@ -57,73 +56,74 @@
     ]
   },
   "capture": {
-    "route": "/",
-    "waitAfterReadyMs": 2000
+    "route": "/catalogue",
+    "readySelector": ".gear-card",
+    "waitAfterReadyMs": 700
   },
   "media": {
     "source": "repo-local",
-    "directory": "/home/runner/work/gorilla-gainz/gorilla-gainz/project-media",
+    "directory": "C:/Users/Gaming PC/Documents/Codex/2026-09-27/new-chat/work/publish-gorilla/project-media",
     "primary": "project-media/card.jpg",
     "images": [
       {
         "profile": "card",
         "file": "card.jpg",
         "path": "project-media/card.jpg",
-        "bytes": 83622,
+        "bytes": 180588,
         "width": 1600,
         "height": 900,
-        "capturedAt": "2026-09-27T14:47:33.383Z"
+        "capturedAt": "2026-09-27T17:37:00.075Z"
       },
       {
         "profile": "desktop",
         "file": "desktop.jpg",
         "path": "project-media/desktop.jpg",
-        "bytes": 71042,
+        "bytes": 173249,
         "width": 1440,
         "height": 900,
-        "capturedAt": "2026-09-27T14:47:36.364Z"
+        "capturedAt": "2026-09-27T17:37:01.228Z"
       },
       {
         "profile": "full",
         "file": "full.jpg",
         "path": "project-media/full.jpg",
-        "bytes": 62767,
+        "bytes": 252454,
         "width": 1440,
-        "height": 1036,
-        "capturedAt": "2026-09-27T14:47:42.089Z"
+        "height": 1693,
+        "capturedAt": "2026-09-27T17:37:03.547Z"
       },
       {
         "profile": "mobile",
         "file": "mobile.jpg",
         "path": "project-media/mobile.jpg",
-        "bytes": 24334,
+        "bytes": 55961,
         "width": 430,
         "height": 932,
-        "capturedAt": "2026-09-27T14:47:39.182Z"
+        "capturedAt": "2026-09-27T17:37:02.327Z"
       },
       {
         "profile": "og",
         "file": "og.jpg",
         "path": "project-media/og.jpg",
-        "bytes": 47138,
+        "bytes": 107957,
         "width": 1200,
         "height": 630,
-        "capturedAt": "2026-09-27T14:47:44.987Z"
+        "capturedAt": "2026-09-27T17:37:04.683Z"
       }
     ],
     "trailers": [
       {
         "id": "tour",
-        "title": "Gorilla Gainz: the store front",
+        "title": "Gorilla Gainz: catalogue, product and demo bag",
         "url": "https://gorilla-gainz-git.pages.dev/trailers/tour.mp4",
         "poster": "https://gorilla-gainz-git.pages.dev/trailers/tour.jpg",
         "file": "public/trailers/tour.mp4",
-        "bytes": 1163325,
+        "bytes": 916712,
         "width": 1280,
         "height": 720,
-        "duration": 20,
+        "duration": 18,
         "orientation": "landscape",
-        "builtAt": "2026-09-27T13:33:27.504Z"
+        "builtAt": "2026-09-27T17:37:35.915Z"
       }
     ]
   },
@@ -155,17 +155,17 @@
     "devDependencyCount": 1
   },
   "metrics": {
-    "sourceFiles": 50,
-    "testFiles": 2,
-    "sourceLines": 5607,
+    "sourceFiles": 59,
+    "testFiles": 4,
+    "sourceLines": 5809,
     "largestDirectories": [
       {
         "directory": "src",
-        "files": 39
+        "files": 45
       },
       {
         "directory": "scripts",
-        "files": 10
+        "files": 13
       },
       {
         "directory": "public",
@@ -185,14 +185,14 @@
     "uniquenessScore": 54,
     "maintenanceScore": 52
   },
-  "analysisNotes": "Archived ecommerce demo with product browsing; kept in the quieter section because it is older and less differentiated.",
+  "analysisNotes": "Original visual identity and product-management flow preserved, with durable bag, demo checkout, responsive catalogue filters and local illustration assets. Verified complete browser workflow and accessible page structure.",
   "git": {
-    "branch": "master",
-    "head": "c158239",
-    "lastCommitDate": "2026-09-27T17:33:54+03:00",
-    "lastCommitSubject": "Update the metadata toolkit scripts: trailers step, refresh --commit, capture.skip",
-    "commitCount": 40,
-    "remote": "https://github.com/BorisThoris/gorilla-gainz"
+    "branch": "codex/gorilla-storefront",
+    "head": "34e4193",
+    "lastCommitDate": "2026-09-27T20:37:32+03:00",
+    "lastCommitSubject": "Complete local storefront flows while preserving Gorilla Gainz design",
+    "commitCount": 42,
+    "remote": "https://github.com/BorisThoris/gorilla-gainz.git"
   },
   "readme": {
     "file": "README.md",

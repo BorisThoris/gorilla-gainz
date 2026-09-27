@@ -3,28 +3,28 @@
   "items": [
     {
       "id": "tour",
-      "title": "Gorilla Gainz: the store front",
+      "title": "Gorilla Gainz: catalogue, product and demo bag",
       "kind": "capture",
-      "inputsHash": "7aa65e5697f473ca815987bab952bc890f6fb9b868539f8fd00c9715bbded0e7",
-      "builtAt": "2026-09-27T13:33:27.504Z",
+      "inputsHash": "e948bde3c982766527e9d51761a657e14f1ccbec2bd9206553532b2e00b8c51e",
+      "builtAt": "2026-09-27T17:37:35.915Z",
       "source": "project-media/.captures/tour.webm",
       "file": "public/trailers/tour.mp4",
       "poster": "public/trailers/tour.jpg",
       "urlPath": "/trailers/tour.mp4",
       "posterUrlPath": "/trailers/tour.jpg",
-      "bytes": 1163325,
+      "bytes": 916712,
       "width": 1280,
       "height": 720,
-      "duration": 20,
+      "duration": 18,
       "fps": 30,
       "orientation": "landscape",
       "music": "project-media/music/tour.m4a",
       "stats": {
-        "mean": 172,
-        "std": 45,
+        "mean": 225,
+        "std": 41,
         "dark": 0,
-        "light": 0.041,
-        "colours": 56
+        "light": 0.659,
+        "colours": 51
       }
     }
   ]

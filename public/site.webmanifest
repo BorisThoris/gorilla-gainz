@@ -1,7 +1,7 @@
 {
   "name": "Gorilla Gainz",
   "short_name": "Gorilla Gainz",
-  "description": "A React e-commerce demo for fitness gear: browse the catalogue and product pages, log in to manage a profile, and use the admin-only screens to add, update and remove products. An early React Router project preserved with demo-safe placeholders for its backend.",
+  "description": "A React fitness store with its original gorilla imagery, green backdrop and sidebar catalogue. Browse and filter six illustrated products, inspect details, keep a shopping bag and try a clearly marked demo checkout. A local editor session supports product creation, updates and removal with persistent drafts and catalogue data.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",

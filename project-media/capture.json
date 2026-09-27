@@ -1,11 +1,12 @@
 {
   "slug": "gorilla-gainz",
-  "capturedAt": "2026-09-27T14:47:45.035Z",
-  "source": "deployment",
-  "url": "https://gorilla-gainz-git.pages.dev/",
+  "capturedAt": "2026-09-27T17:37:04.802Z",
+  "source": "local",
+  "url": "http://127.0.0.1:4514/catalogue",
   "recipe": {
-    "route": "/",
-    "waitAfterReadyMs": 2000
+    "route": "/catalogue",
+    "readySelector": ".gear-card",
+    "waitAfterReadyMs": 700
   },
   "profiles": [
     {
@@ -13,14 +14,14 @@
       "file": "card.jpg",
       "width": 1600,
       "height": 900,
-      "bytes": 83622,
+      "bytes": 180588,
       "status": "captured",
       "stats": {
-        "mean": 74,
-        "std": 77,
-        "dark": 0.114,
-        "light": 0.045,
-        "colours": 61
+        "mean": 197,
+        "std": 58,
+        "dark": 0,
+        "light": 0.298,
+        "colours": 64
       }
     },
     {
@@ -28,13 +29,13 @@
       "file": "desktop.jpg",
       "width": 1440,
       "height": 900,
-      "bytes": 71042,
+      "bytes": 173249,
       "status": "captured",
       "stats": {
-        "mean": 65,
-        "std": 76,
-        "dark": 0.118,
-        "light": 0.033,
+        "mean": 200,
+        "std": 57,
+        "dark": 0,
+        "light": 0.286,
         "colours": 64
       }
     },
@@ -43,14 +44,14 @@
       "file": "mobile.jpg",
       "width": 430,
       "height": 932,
-      "bytes": 24334,
+      "bytes": 55961,
       "status": "captured",
       "stats": {
-        "mean": 60,
-        "std": 78,
-        "dark": 0.032,
-        "light": 0.007,
-        "colours": 62
+        "mean": 221,
+        "std": 53,
+        "dark": 0,
+        "light": 0.559,
+        "colours": 56
       }
     },
     {
@@ -58,13 +59,13 @@
       "file": "full.jpg",
       "width": 1440,
       "height": 900,
-      "bytes": 62767,
+      "bytes": 252454,
       "status": "captured",
       "stats": {
-        "mean": 65,
-        "std": 76,
-        "dark": 0.118,
-        "light": 0.033,
+        "mean": 200,
+        "std": 57,
+        "dark": 0,
+        "light": 0.286,
         "colours": 64
       }
     },
@@ -73,14 +74,14 @@
       "file": "og.jpg",
       "width": 1200,
       "height": 630,
-      "bytes": 47138,
+      "bytes": 107957,
       "status": "captured",
       "stats": {
-        "mean": 62,
-        "std": 80,
-        "dark": 0.097,
-        "light": 0.061,
-        "colours": 53
+        "mean": 199,
+        "std": 59,
+        "dark": 0,
+        "light": 0.321,
+        "colours": 64
       }
     }
   ]
