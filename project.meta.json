@@ -1,7 +1,7 @@
 {
   "$schema": "./scripts/project.meta.schema.json",
   "schemaVersion": 1,
-  "generatedAt": "2026-09-27T17:42:52.253Z",
+  "generatedAt": "2026-09-27T20:36:30.985Z",
   "generatedBy": "scripts/generate-project-meta.mjs",
   "identity": {
     "slug": "gorilla-gainz",
@@ -72,7 +72,7 @@
         "bytes": 176530,
         "width": 1600,
         "height": 900,
-        "capturedAt": "2026-09-27T17:42:47.526Z"
+        "capturedAt": "2026-09-27T20:36:26.095Z"
       },
       {
         "profile": "desktop",
@@ -81,7 +81,7 @@
         "bytes": 170311,
         "width": 1440,
         "height": 900,
-        "capturedAt": "2026-09-27T17:42:48.606Z"
+        "capturedAt": "2026-09-27T20:36:27.324Z"
       },
       {
         "profile": "full",
@@ -90,7 +90,7 @@
         "bytes": 247928,
         "width": 1440,
         "height": 1693,
-        "capturedAt": "2026-09-27T17:42:50.853Z"
+        "capturedAt": "2026-09-27T20:36:29.708Z"
       },
       {
         "profile": "mobile",
@@ -99,7 +99,7 @@
         "bytes": 54790,
         "width": 430,
         "height": 932,
-        "capturedAt": "2026-09-27T17:42:49.694Z"
+        "capturedAt": "2026-09-27T20:36:28.527Z"
       },
       {
         "profile": "og",
@@ -108,7 +108,7 @@
         "bytes": 105465,
         "width": 1200,
         "height": 630,
-        "capturedAt": "2026-09-27T17:42:52.117Z"
+        "capturedAt": "2026-09-27T20:36:30.818Z"
       }
     ],
     "trailers": [
@@ -155,9 +155,9 @@
     "devDependencyCount": 1
   },
   "metrics": {
-    "sourceFiles": 59,
-    "testFiles": 4,
-    "sourceLines": 5809,
+    "sourceFiles": 62,
+    "testFiles": 5,
+    "sourceLines": 6067,
     "largestDirectories": [
       {
         "directory": "src",
@@ -165,11 +165,11 @@
       },
       {
         "directory": "scripts",
-        "files": 13
+        "files": 15
       },
       {
         "directory": "public",
-        "files": 1
+        "files": 2
       }
     ],
     "hasReadme": true,
@@ -188,10 +188,10 @@
   "analysisNotes": "Original visual identity and product-management flow preserved, with durable bag, demo checkout, responsive catalogue filters and local illustration assets. Verified complete browser workflow and accessible page structure.",
   "git": {
     "branch": "master",
-    "head": "52a0f65",
-    "lastCommitDate": "2026-09-27T20:39:58+03:00",
-    "lastCommitSubject": "Refresh original-design store screenshots and workflow trailer",
-    "commitCount": 43,
+    "head": "28594f7",
+    "lastCommitDate": "2026-09-27T23:29:44+03:00",
+    "lastCommitSubject": "Serve published trailers with real HTTP byte ranges",
+    "commitCount": 45,
     "remote": "https://github.com/BorisThoris/gorilla-gainz"
   },
   "readme": {
