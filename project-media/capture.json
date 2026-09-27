@@ -1,10 +1,11 @@
 {
   "slug": "gorilla-gainz",
-  "capturedAt": "2026-09-24T16:33:50.265Z",
+  "capturedAt": "2026-09-27T13:35:11.673Z",
   "source": "deployment",
   "url": "https://gorilla-gainz-git.pages.dev/",
   "recipe": {
-    "route": "/"
+    "route": "/",
+    "waitAfterReadyMs": 2000
   },
   "profiles": [
     {
@@ -12,40 +13,75 @@
       "file": "card.jpg",
       "width": 1600,
       "height": 900,
-      "bytes": 83622,
-      "status": "captured"
+      "bytes": 167853,
+      "status": "captured",
+      "stats": {
+        "mean": 78,
+        "std": 79,
+        "dark": 0.356,
+        "light": 0.044,
+        "colours": 97
+      }
     },
     {
       "profile": "desktop",
       "file": "desktop.jpg",
       "width": 1440,
       "height": 900,
-      "bytes": 71042,
-      "status": "captured"
+      "bytes": 155388,
+      "status": "captured",
+      "stats": {
+        "mean": 69,
+        "std": 80,
+        "dark": 0.407,
+        "light": 0.033,
+        "colours": 100
+      }
     },
     {
       "profile": "mobile",
       "file": "mobile.jpg",
       "width": 430,
       "height": 932,
-      "bytes": 24334,
-      "status": "captured"
+      "bytes": 34796,
+      "status": "captured",
+      "stats": {
+        "mean": 54,
+        "std": 82,
+        "dark": 0.598,
+        "light": 0.003,
+        "colours": 86
+      }
     },
     {
       "profile": "full",
       "file": "full.jpg",
       "width": 1440,
       "height": 900,
-      "bytes": 62767,
-      "status": "captured"
+      "bytes": 137220,
+      "status": "captured",
+      "stats": {
+        "mean": 69,
+        "std": 80,
+        "dark": 0.407,
+        "light": 0.033,
+        "colours": 100
+      }
     },
     {
       "profile": "og",
       "file": "og.jpg",
       "width": 1200,
       "height": 630,
-      "bytes": 47138,
-      "status": "captured"
+      "bytes": 107127,
+      "status": "captured",
+      "stats": {
+        "mean": 65,
+        "std": 83,
+        "dark": 0.43,
+        "light": 0.058,
+        "colours": 90
+      }
     }
   ]
 }

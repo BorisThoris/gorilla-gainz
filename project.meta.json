@@ -1,7 +1,7 @@
 {
   "$schema": "./scripts/project.meta.schema.json",
   "schemaVersion": 1,
-  "generatedAt": "2026-09-24T16:33:50.394Z",
+  "generatedAt": "2026-09-27T13:35:20.207Z",
   "generatedBy": "scripts/generate-project-meta.mjs",
   "identity": {
     "slug": "gorilla-gainz",
@@ -51,61 +51,79 @@
       "icons:check",
       "meta:refresh",
       "trailers",
-      "trailers:check"
+      "trailers:check",
+      "test:media",
+      "test:media:e2e"
     ]
   },
   "capture": {
-    "route": "/"
+    "route": "/",
+    "waitAfterReadyMs": 2000
   },
   "media": {
     "source": "repo-local",
-    "directory": "/home/runner/work/gorilla-gainz/gorilla-gainz/project-media",
+    "directory": "C:/Users/GAMING~1/AppData/Local/Temp/media-rollout-nLVMjz/project-media",
     "primary": "project-media/card.jpg",
     "images": [
       {
         "profile": "card",
         "file": "card.jpg",
         "path": "project-media/card.jpg",
-        "bytes": 83622,
+        "bytes": 167853,
         "width": 1600,
         "height": 900,
-        "capturedAt": "2026-09-24T16:33:42.070Z"
+        "capturedAt": "2026-09-27T13:34:39.337Z"
       },
       {
         "profile": "desktop",
         "file": "desktop.jpg",
         "path": "project-media/desktop.jpg",
-        "bytes": 71042,
+        "bytes": 155388,
         "width": 1440,
         "height": 900,
-        "capturedAt": "2026-09-24T16:33:44.080Z"
+        "capturedAt": "2026-09-27T13:34:43.875Z"
       },
       {
         "profile": "full",
         "file": "full.jpg",
         "path": "project-media/full.jpg",
-        "bytes": 62767,
+        "bytes": 137220,
         "width": 1440,
         "height": 1036,
-        "capturedAt": "2026-09-24T16:33:48.185Z"
+        "capturedAt": "2026-09-27T13:34:53.436Z"
       },
       {
         "profile": "mobile",
         "file": "mobile.jpg",
         "path": "project-media/mobile.jpg",
-        "bytes": 24334,
+        "bytes": 34796,
         "width": 430,
         "height": 932,
-        "capturedAt": "2026-09-24T16:33:46.132Z"
+        "capturedAt": "2026-09-27T13:34:48.654Z"
       },
       {
         "profile": "og",
         "file": "og.jpg",
         "path": "project-media/og.jpg",
-        "bytes": 47138,
+        "bytes": 107127,
         "width": 1200,
         "height": 630,
-        "capturedAt": "2026-09-24T16:33:50.224Z"
+        "capturedAt": "2026-09-27T13:34:58.623Z"
+      }
+    ],
+    "trailers": [
+      {
+        "id": "tour",
+        "title": "Gorilla Gainz: the store front",
+        "url": "https://gorilla-gainz-git.pages.dev/trailers/tour.mp4",
+        "poster": "https://gorilla-gainz-git.pages.dev/trailers/tour.jpg",
+        "file": "public/trailers/tour.mp4",
+        "bytes": 1163325,
+        "width": 1280,
+        "height": 720,
+        "duration": 20,
+        "orientation": "landscape",
+        "builtAt": "2026-09-27T13:33:27.504Z"
       }
     ]
   },
@@ -137,9 +155,9 @@
     "devDependencyCount": 1
   },
   "metrics": {
-    "sourceFiles": 47,
-    "testFiles": 0,
-    "sourceLines": 4769,
+    "sourceFiles": 50,
+    "testFiles": 2,
+    "sourceLines": 5602,
     "largestDirectories": [
       {
         "directory": "src",
@@ -147,7 +165,7 @@
       },
       {
         "directory": "scripts",
-        "files": 7
+        "files": 10
       },
       {
         "directory": "public",
@@ -155,7 +173,7 @@
       }
     ],
     "hasReadme": true,
-    "hasTests": false,
+    "hasTests": true,
     "hasCi": true,
     "hasDocs": false
   },
@@ -169,12 +187,12 @@
   },
   "analysisNotes": "Archived ecommerce demo with product browsing; kept in the quieter section because it is older and less differentiated.",
   "git": {
-    "branch": "master",
-    "head": "ad517cd",
-    "lastCommitDate": "2026-09-24T19:17:05+03:00",
-    "lastCommitSubject": "Update the metadata toolkit scripts: trailers step, refresh --commit, capture.skip",
-    "commitCount": 36,
-    "remote": "https://github.com/BorisThoris/gorilla-gainz"
+    "branch": "HEAD",
+    "head": "8888f56",
+    "lastCommitDate": "2026-09-24T16:33:50+00:00",
+    "lastCommitSubject": "Refresh screenshots, card, icons and metadata [meta-bot]",
+    "commitCount": 37,
+    "remote": "https://github.com/BorisThoris/gorilla-gainz.git"
   },
   "readme": {
     "file": "README.md",
