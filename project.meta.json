@@ -1,7 +1,7 @@
 {
   "$schema": "./scripts/project.meta.schema.json",
   "schemaVersion": 1,
-  "generatedAt": "2026-09-27T20:36:30.985Z",
+  "generatedAt": "2026-10-13T01:07:36.879Z",
   "generatedBy": "scripts/generate-project-meta.mjs",
   "identity": {
     "slug": "gorilla-gainz",
@@ -62,53 +62,53 @@
   },
   "media": {
     "source": "repo-local",
-    "directory": "/home/runner/work/gorilla-gainz/gorilla-gainz/project-media",
+    "directory": "/root/gha/runners/gorilla-gainz/_work/gorilla-gainz/gorilla-gainz/project-media",
     "primary": "project-media/card.jpg",
     "images": [
       {
         "profile": "card",
         "file": "card.jpg",
         "path": "project-media/card.jpg",
-        "bytes": 176530,
+        "bytes": 170181,
         "width": 1600,
         "height": 900,
-        "capturedAt": "2026-09-27T20:36:26.095Z"
+        "capturedAt": "2026-10-13T01:07:19.952Z"
       },
       {
         "profile": "desktop",
         "file": "desktop.jpg",
         "path": "project-media/desktop.jpg",
-        "bytes": 170311,
+        "bytes": 164122,
         "width": 1440,
         "height": 900,
-        "capturedAt": "2026-09-27T20:36:27.324Z"
+        "capturedAt": "2026-10-13T01:07:23.800Z"
       },
       {
         "profile": "full",
         "file": "full.jpg",
         "path": "project-media/full.jpg",
-        "bytes": 247928,
+        "bytes": 241100,
         "width": 1440,
         "height": 1693,
-        "capturedAt": "2026-09-27T20:36:29.708Z"
+        "capturedAt": "2026-10-13T01:07:31.972Z"
       },
       {
         "profile": "mobile",
         "file": "mobile.jpg",
         "path": "project-media/mobile.jpg",
-        "bytes": 54790,
+        "bytes": 52750,
         "width": 430,
         "height": 932,
-        "capturedAt": "2026-09-27T20:36:28.527Z"
+        "capturedAt": "2026-10-13T01:07:27.604Z"
       },
       {
         "profile": "og",
         "file": "og.jpg",
         "path": "project-media/og.jpg",
-        "bytes": 105465,
+        "bytes": 100699,
         "width": 1200,
         "height": 630,
-        "capturedAt": "2026-09-27T20:36:30.818Z"
+        "capturedAt": "2026-10-13T01:07:35.516Z"
       }
     ],
     "trailers": [
@@ -188,10 +188,10 @@
   "analysisNotes": "Original visual identity and product-management flow preserved, with durable bag, demo checkout, responsive catalogue filters and local illustration assets. Verified complete browser workflow and accessible page structure.",
   "git": {
     "branch": "master",
-    "head": "28594f7",
-    "lastCommitDate": "2026-09-27T23:29:44+03:00",
-    "lastCommitSubject": "Serve published trailers with real HTTP byte ranges",
-    "commitCount": 45,
+    "head": "96e6b25",
+    "lastCommitDate": "2026-10-13T01:43:45+03:00",
+    "lastCommitSubject": "Hosted jobs move to the owner's own runners",
+    "commitCount": 47,
     "remote": "https://github.com/BorisThoris/gorilla-gainz"
   },
   "readme": {

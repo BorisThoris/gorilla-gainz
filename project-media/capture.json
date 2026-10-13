@@ -1,6 +1,6 @@
 {
   "slug": "gorilla-gainz",
-  "capturedAt": "2026-09-27T20:36:30.850Z",
+  "capturedAt": "2026-10-13T01:07:36.172Z",
   "source": "deployment",
   "url": "https://gorilla-gainz-git.pages.dev/catalogue",
   "recipe": {
@@ -14,13 +14,13 @@
       "file": "card.jpg",
       "width": 1600,
       "height": 900,
-      "bytes": 176530,
+      "bytes": 170181,
       "status": "captured",
       "stats": {
         "mean": 197,
         "std": 58,
         "dark": 0,
-        "light": 0.3,
+        "light": 0.301,
         "colours": 64
       }
     },
@@ -29,14 +29,14 @@
       "file": "desktop.jpg",
       "width": 1440,
       "height": 900,
-      "bytes": 170311,
+      "bytes": 164122,
       "status": "captured",
       "stats": {
         "mean": 200,
         "std": 57,
         "dark": 0,
-        "light": 0.286,
-        "colours": 62
+        "light": 0.289,
+        "colours": 63
       }
     },
     {
@@ -44,14 +44,14 @@
       "file": "mobile.jpg",
       "width": 430,
       "height": 932,
-      "bytes": 54790,
+      "bytes": 52750,
       "status": "captured",
       "stats": {
         "mean": 221,
         "std": 53,
         "dark": 0,
-        "light": 0.557,
-        "colours": 51
+        "light": 0.559,
+        "colours": 46
       }
     },
     {
@@ -59,14 +59,14 @@
       "file": "full.jpg",
       "width": 1440,
       "height": 900,
-      "bytes": 247928,
+      "bytes": 241100,
       "status": "captured",
       "stats": {
         "mean": 200,
         "std": 57,
         "dark": 0,
-        "light": 0.286,
-        "colours": 62
+        "light": 0.289,
+        "colours": 63
       }
     },
     {
@@ -74,13 +74,13 @@
       "file": "og.jpg",
       "width": 1200,
       "height": 630,
-      "bytes": 105465,
+      "bytes": 100699,
       "status": "captured",
       "stats": {
         "mean": 199,
         "std": 59,
         "dark": 0,
-        "light": 0.321,
+        "light": 0.322,
         "colours": 64
       }
     }
