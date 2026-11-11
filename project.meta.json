@@ -72,7 +72,7 @@
         "bytes": 170181,
         "width": 1600,
         "height": 900,
-        "capturedAt": "2026-10-13T01:07:19.952Z"
+        "capturedAt": "2026-11-11T23:49:52.215Z"
       },
       {
         "profile": "desktop",
@@ -81,7 +81,7 @@
         "bytes": 164122,
         "width": 1440,
         "height": 900,
-        "capturedAt": "2026-10-13T01:07:23.800Z"
+        "capturedAt": "2026-11-11T23:49:55.883Z"
       },
       {
         "profile": "full",
@@ -90,7 +90,7 @@
         "bytes": 241100,
         "width": 1440,
         "height": 1693,
-        "capturedAt": "2026-10-13T01:07:31.972Z"
+        "capturedAt": "2026-11-11T23:50:03.651Z"
       },
       {
         "profile": "mobile",
@@ -99,7 +99,7 @@
         "bytes": 52750,
         "width": 430,
         "height": 932,
-        "capturedAt": "2026-10-13T01:07:27.604Z"
+        "capturedAt": "2026-11-11T23:49:59.407Z"
       },
       {
         "profile": "og",
@@ -108,7 +108,7 @@
         "bytes": 100699,
         "width": 1200,
         "height": 630,
-        "capturedAt": "2026-10-13T01:07:35.516Z"
+        "capturedAt": "2026-11-11T23:50:07.871Z"
       }
     ],
     "trailers": [
@@ -188,10 +188,10 @@
   "analysisNotes": "Original visual identity and product-management flow preserved, with durable bag, demo checkout, responsive catalogue filters and local illustration assets. Verified complete browser workflow and accessible page structure.",
   "git": {
     "branch": "master",
-    "head": "96e6b25",
-    "lastCommitDate": "2026-10-13T01:43:45+03:00",
-    "lastCommitSubject": "Hosted jobs move to the owner's own runners",
-    "commitCount": 47,
+    "head": "88c2f0e",
+    "lastCommitDate": "2026-11-12T01:36:09+02:00",
+    "lastCommitSubject": "Republish the link-preview card from the new screenshots",
+    "commitCount": 50,
     "remote": "https://github.com/BorisThoris/gorilla-gainz"
   },
   "readme": {
